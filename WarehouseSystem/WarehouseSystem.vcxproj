@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -122,6 +122,7 @@
     <ClInclude Include="Employee.h" />
     <ClInclude Include="Item.h" />
     <ClInclude Include="MagazineWorker.h" />
+    <ClInclude Include="main.h" />
     <ClInclude Include="Message.h" />
     <ClInclude Include="Messenger.h" />
     <ClInclude Include="Order.h" />
@@ -139,6 +140,7 @@
     <ClCompile Include="Driver.cpp" />
     <ClCompile Include="Employee.cpp" />
     <ClCompile Include="MagazineWorker.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Message.cpp" />
     <ClCompile Include="Messenger.cpp" />
     <ClCompile Include="OrderCreationInteface.cpp" />
