@@ -1,3 +1,4 @@
+#include <string>
 #include "Saller.h"
 
 Order Saller::createOrder(Order order) {
@@ -5,12 +6,7 @@ Order Saller::createOrder(Order order) {
 	throw "Not yet implemented";
 }
 
-Receipt Saller::sendReceipt(string text) {
+Receipt Saller::sendReceipt(std::string text) {
 	// TODO - implement Saller::sendReceipt
-	throw "Not yet implemented";
-}
-
-void Saller::sendMessage(string message, string receiver) {
-	// TODO - implement Saller::sendMessage
 	throw "Not yet implemented";
 }

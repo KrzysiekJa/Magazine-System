@@ -11,8 +11,6 @@ private:
 
 	Order sendOdrerToDriver();
 
-public:
-	void sendMessage(string message, string receiver);
 };
 
 #endif

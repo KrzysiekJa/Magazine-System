@@ -7,14 +7,12 @@ private:
 	Receipt receipt;
 
 	/**
-	 * Uzupe³niæ
+	 * Uzupelnie
 	 */
 	Order createOrder(Order order);
 
 	Receipt sendReceipt(string text);
 
-public:
-	void sendMessage(string message, string receiver);
 };
 
 #endif

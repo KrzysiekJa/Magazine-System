@@ -1,6 +1,6 @@
 #include "Client.h"
 
 void Client::showOdrers() {
-	// TODO - implement Client::showOdrers
+	// TODO - interface:OrdersControlSystem
 	throw "Not yet implemented";
 }

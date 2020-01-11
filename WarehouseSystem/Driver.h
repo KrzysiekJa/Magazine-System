@@ -9,7 +9,6 @@ private:
 	void deselectOrder();
 
 private:
-	void sendMessage(string message, string receiver);
 
 	Order* showOrders();
 };

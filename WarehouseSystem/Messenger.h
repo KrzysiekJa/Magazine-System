@@ -3,13 +3,11 @@
 
 class Messenger {
 
-private:
-	int id;
 
 public:
-	void sendMessage(string message, string receiver);
+	void sendMessage(string message, string receiver, string sender);
 
-	string checkMessages();
+	string checkMessages(string sender, string receiver);
 };
 
 #endif

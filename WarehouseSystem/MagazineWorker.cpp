@@ -14,8 +14,3 @@ Order MagazineWorker::sendOdrerToDriver() {
 	// TODO - implement MagazineWorker::sendOdrerToDriver
 	throw "Not yet implemented";
 }
-
-void MagazineWorker::sendMessage(string message, string receiver) {
-	// TODO - implement MagazineWorker::sendMessage
-	throw "Not yet implemented";
-}
