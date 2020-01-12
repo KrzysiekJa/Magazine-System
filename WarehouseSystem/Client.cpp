@@ -1,6 +1,8 @@
 #include "Client.h"
 
-void Client::showOdrers() {
-	// TODO - interface:OrdersControlSystem
-	throw "Not yet implemented";
+Client::Client(std::string Nname, std::string Nsurmane, std::string Nphone_number, int Nid):
+		Person(std::string Nname, std::string Nsurmane, std::string Nphone_number, int Nid);
+	
+Client::showReceipts(){ // to do
+	
 }

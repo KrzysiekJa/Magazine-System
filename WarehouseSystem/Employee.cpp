@@ -2,21 +2,11 @@
 #include <string>
 #include "Employee.h"
 
+Employee::Employee(std::string Nname, std::string Nsurmane, std::string Nphone_number, int Nid, std::string Nbirth_date, int Npesel): 
+			name(Nname), surname(Nsurmane), phone_number(Nphone_number), id(Nid), birth_date(Nbirth_date), pesel(Npesel) {}
 
-void Employee::sendMessage(std::string message, std::string receiver, std::string sender) {
-	// TODO - implement Employee::sendMessage
-	// interface:Messenger
-	throw "Not yet implemented";
-}
-
-string Employee::checkMessages(std::string sender, std::string receiver) {
-	// TODO - implement Employee::checkMessages
-	// interface:Messenger
-	throw "Not yet implemented";
-}
-
-void Employee::showOrders() {
-	// TODO - implement Employee::showOrders
-	// interface: OrdersControlSystem
-	throw "Not yet implemented";
+void Employee::personShowData() {
+	showData();
+	std::cout << "Birth date : "    << birth_date << endl
+		 	  << "Pesel : " << pesel << endl;
 }

@@ -2,16 +2,15 @@
 #define EMPLOYEE_H
 #include <string>
 
-class Employee : Person {
+class Employee : Person, OrdersControlSystem {
 
 protected:
 	string birth_date;
 	int    pesel;
 
-
-	void sendMessage(string message, string receiver, string sender);
-	string checkMessages(string sender, string receiver);
-	void showOrders();
+	Person(std::string Nname, std::string Nsurmane, std::string Nphone_number, int Nid, std::string Nbirth_date, int Npesel);
+	
+	void showData();
 };
 
 #endif
