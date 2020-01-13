@@ -1,6 +1,6 @@
 #include "Quest.h"
 
-boolean Quest::completed() {
+bool Quest::completed() {
 	// TODO - implement Quest::completed
 	throw "Not yet implemented";
 }

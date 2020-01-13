@@ -6,8 +6,8 @@ Person::Person(std::string Nname, std::string Nsurmane, std::string Nphone_numbe
 			name(Nname), surname(Nsurmane), phone_number(Nphone_number), id(Nid){}
 
 void Person::showData() {
-	std::cout << "Name : "    << name << endl
-		 	  << "Surname : " << surname << endl
-			  << "Phone number : " << phone_number << endl
-		      << "Id : " << id << endl;
+	std::cout << "Name : "    << name << std::endl
+		 	  << "Surname : " << surname << std::endl
+			  << "Phone number : " << phone_number << std::endl
+		      << "Id : " << id << std::endl;
 }

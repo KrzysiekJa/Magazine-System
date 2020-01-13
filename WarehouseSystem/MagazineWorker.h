@@ -1,6 +1,8 @@
 #ifndef MAGAZINEWORKER_H
 #define MAGAZINEWORKER_H
 #include <string>
+#include "Employee.h"
+
 
 class MagazineWorker : Employee {
 public:
@@ -10,7 +12,7 @@ public:
 private:
 	void deselectItem();
 
-	string reportShortages();
+	std::string reportShortages();
 
 	Order sendOdrerToDriver();
 	// they rather to delete
