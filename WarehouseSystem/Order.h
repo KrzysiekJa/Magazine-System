@@ -1,13 +1,13 @@
 #ifndef ORDER_H
 #define ORDER_H
-
+#include <string>
 class Order {
 
 private:
 	std::vector<int> id;
-	string products[];
-	boolean productsStatus[];
-	string status;
+	std::string products[];
+	bool productsStatus;
+	std::string status;
 };
 
 #endif

@@ -1,6 +1,6 @@
 #ifndef QUEST_H
 #define QUEST_H
-
+#include "ClientInformatio.h"
 class Quest {
 
 private:
@@ -8,7 +8,7 @@ private:
 	ClientInformatio information;
 
 protected:
-	boolean completed();
+	bool completed();
 };
 
 #endif

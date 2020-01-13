@@ -1,11 +1,12 @@
 #include "MagazineWorker.h"
-
+#include <string>
+#include "Order.h"
 void MagazineWorker::deselectItem() {
 	// TODO - implement MagazineWorker::deselectItem
 	throw "Not yet implemented";
 }
 
-string MagazineWorker::reportShortages() {
+std::string MagazineWorker::reportShortages() {
 	// TODO - implement MagazineWorker::reportShortages
 	throw "Not yet implemented";
 }

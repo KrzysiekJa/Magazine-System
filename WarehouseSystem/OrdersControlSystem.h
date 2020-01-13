@@ -1,6 +1,6 @@
 #ifndef ORDERSCONTROLSYSTEM_H
 #define ORDERSCONTROLSYSTEM_H
-
+#include "Quest.h"
 class OrdersControlSystem {
 
 private:

@@ -1,7 +1,9 @@
 #ifndef SALLER_H
 #define SALLER_H
+#include <string>
+#include "Employee.h"
 
-class Saller : Employee {
+class Seller : Employee {
 
 private:
 	Receipt receipt;
@@ -11,7 +13,7 @@ private:
 	 */
 	Order createOrder(Order order);
 
-	Receipt sendReceipt(string text);
+	Receipt sendReceipt(std::string text);
 
 };
 

@@ -1,11 +1,12 @@
 #ifndef CLIENTINFORMATIO_H
 #define CLIENTINFORMATIO_H
+#include <string>
 
 class ClientInformatio {
 
 private:
-	string zip_code;
-	string adress;
+	std::string zip_code;
+	std::string adress;
 };
 
 #endif

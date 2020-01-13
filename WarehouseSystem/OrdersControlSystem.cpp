@@ -1,4 +1,5 @@
 #include "OrdersControlSystem.h"
+#include "Order.h"
 
 void OrdersControlSystem::saveToDB() {
 	// TODO - implement OrdersControlSystem::saveToDB

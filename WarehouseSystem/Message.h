@@ -1,17 +1,17 @@
 #ifndef MESSAGE_H
 #define MESSAGE_H
-
+#include <string>
 class Message {
 
 private:
-	string message;
-	string receiver;
+	std::string message;
+	std::string receiver;
 	int id;
 
 public:
-	string readMessage(string message);
+	std::string readMessage(std::string message);
 
-	string deleteMessage(string message);
+	std::string deleteMessage(std::string message);
 };
 
 #endif

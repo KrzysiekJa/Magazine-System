@@ -1,11 +1,12 @@
 #include "Message.h"
+#include <string>
 
-string Message::readMessage(string message) {
+std::string Message::readMessage(std::string message) {
 	// TODO - implement Message::readMessage
 	throw "Not yet implemented";
 }
 
-string Message::deleteMessage(string message) {
+std::string Message::deleteMessage(std::string message) {
 	// TODO - implement Message::deleteMessage
 	throw "Not yet implemented";
 }

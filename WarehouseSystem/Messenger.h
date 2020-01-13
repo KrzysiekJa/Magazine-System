@@ -1,13 +1,14 @@
 #ifndef MESSENGER_H
 #define MESSENGER_H
+#include <string>
 
 class Messenger {
 
 
 public:
-	void sendMessage(string message, string receiver, string sender);
+	void sendMessage(std::string message, std::string receiver, std::string sender);
 
-	string checkMessages(string sender, string receiver);
+	std::string checkMessages(std::string sender, std::string receiver);
 };
 
 #endif

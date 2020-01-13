@@ -1,13 +1,13 @@
 #ifndef RECEIPT_H
 #define RECEIPT_H
-
+#include <string>
 class Receipt {
 
 private:
-	string data[];
+	std::string data[];
 
 public:
-	Receipt create(string text);
+	Receipt create(std::string text);
 };
 
 #endif
