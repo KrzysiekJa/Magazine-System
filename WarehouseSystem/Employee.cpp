@@ -7,6 +7,6 @@ Employee::Employee(std::string Nname, std::string Nsurmane, std::string Nphone_n
 
 void Employee::personShowData() {
 	showData();
-	std::cout << "Birth date : "    << birth_date << endl
+	std::cout << "Birth date : " << birth_date << endl
 		 	  << "Pesel : " << pesel << endl;
 }
