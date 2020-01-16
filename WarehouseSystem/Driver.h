@@ -13,7 +13,6 @@ private:
 
 	void deselectOrder();
 
-	Order* showOrders();
 };
 
 #endif
