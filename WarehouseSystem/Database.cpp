@@ -33,7 +33,7 @@ static int callback(void* NotUsed, int argc, char** argv, char** azColName) {
     return 0;
 }
 
-int Database::createTable() {
+void Database::createTable() {
     /*Create new tables in database*/
     if(checkConnection()){
 

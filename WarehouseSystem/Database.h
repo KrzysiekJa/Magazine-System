@@ -6,7 +6,7 @@ class Database
 public:
 	bool checkConnection();
 
-	int createTable();
+	void createTable();
 
 	void addPersonToDB(std::string table_name, std::string name, std::string surname, std::string phone_number, std::string birth_date, std::string pesel);
 
