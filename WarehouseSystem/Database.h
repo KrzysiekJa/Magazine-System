@@ -3,16 +3,12 @@
 
 class Database
 {
-	void checkConnection();
+public:
+	bool checkConnection();
 
 	int createTable();
 
-
-	void addEmployerToDB(std::string name, std::string surname, std::string pesel);
-
-
-	void addClientToDB(std::string name, std::string surname, std::string pesel);
-
+	void addPersonToDB(std::string table_name, std::string name, std::string surname, std::string phone_number, std::string birth_date, std::string pesel);
 
 	void addUserToDB(std::string login, std::string password);
 };
