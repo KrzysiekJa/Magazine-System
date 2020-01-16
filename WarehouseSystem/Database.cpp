@@ -10,14 +10,13 @@ int rc;
 std::string sql_string;
 const char* sql;
 
-int checkConnection() {
+void Database::checkConnection() {
     //tylko do sprawdzania polaczania
 
     rc = sqlite3_open("warehouse.db", &db);
 
     if (rc) {
         fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
-        return(0);
     }
     else {
         fprintf(stderr, "Opened database successfully\n");
@@ -34,7 +33,7 @@ static int callback(void* NotUsed, int argc, char** argv, char** azColName) {
     return 0;
 }
 
-int createTable() {
+int Database::createTable() {
     //uzyc tylko raz do tworzenia tabeli
     rc = sqlite3_open("warehouse.db", &db);
 
@@ -67,7 +66,7 @@ int createTable() {
 }
 
 
-void addEmployerToDB(std::string name, std::string surname, std::string pesel) { //uzupelnic atrybuty
+void Database::addEmployerToDB(std::string name, std::string surname, std::string pesel) { //uzupelnic atrybuty
     rc = sqlite3_open("warehouse.db", &db);
 
     if (rc) {
@@ -95,7 +94,7 @@ void addEmployerToDB(std::string name, std::string surname, std::string pesel) {
 }
 
 
-void addClientToDB(std::string name, std::string surname, std::string pesel) { //uzupelnic atrybuty
+void Database::addClientToDB(std::string name, std::string surname, std::string pesel) { //uzupelnic atrybuty
     rc = sqlite3_open("warehouse.db", &db);
 
     if (rc) {
@@ -122,7 +121,7 @@ void addClientToDB(std::string name, std::string surname, std::string pesel) { /
     sqlite3_close(db);
 }
 
-void addUserToDB(std::string login, std::string password) { //uzupelnic atrybuty
+void Database::addUserToDB(std::string login, std::string password) { //uzupelnic atrybuty
     rc = sqlite3_open("warehouse.db", &db);
 
     if (rc) {
