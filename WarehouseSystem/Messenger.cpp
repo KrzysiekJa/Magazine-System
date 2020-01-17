@@ -49,7 +49,7 @@ void Messenger::sendMessage(std::string message, std::string receiver, std::stri
 
 std::string Messenger::checkMessages(std::string sender, std::string receiver) {
 	if (checkConnection()) {
-		sql_string = "SELECT MESSAGE FROM MESSENGER WHERE SENDER='" + sender + "' AND '"+ receiver +"'";
+		sql_string = "SELECT ID, MESSAGE FROM MESSENGER WHERE SENDER='" + sender + "' AND '"+ receiver +"'";
 
 		sql = sql_string.c_str();
 
