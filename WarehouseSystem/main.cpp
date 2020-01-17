@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdlib>
+#include <string>
 #include "Database.h"
 
 
@@ -24,7 +25,6 @@ int main(void)
 			    break;
 			case 'exit':
 			    exit(0);
-			    break;
 			default:
 			   	break;
 		}
