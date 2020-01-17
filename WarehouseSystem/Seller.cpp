@@ -62,31 +62,27 @@ void menu(){
 		std::cout << "Choose : create, show all (order(s)), add (product), receipt, read, send (message), logout" << std::endl;
 		std::cin >> str;
 		
-		switch(str){
-			
-			case 'create':
+		
+		if('create'){
 				// TO DO
-				break;
-			case 'show all':
-			case 'all':
+		}
+		if('show all' || 'all'){
 			    // TO DO
-				break;
-			case 'add':
+		}
+		if('add'){
+				// TO DO
+		}
+		if('receipt'){
 			    // TO DO
-			    break;
-			case 'receipt':
+		}
+		if('read'){
 			    // TO DO
-			    break;
-			case 'read':
+		}
+		if('send'){
 			    // TO DO
-				break;
-			case 'send':
-			    // TO DO
-			    break;
-			case 'logout':
-			    return;
-			default:
-			   	break;
+		}
+		if('logout'){
+			return;
 		}
 	}
 }

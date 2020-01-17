@@ -29,33 +29,30 @@ void menu(){
 	while(true){
 		std::string str;
 		
-		std::cout << "Choose : show all (order(s)), show, deselect(order), (show) complited, read, send (message), logout" << std::endl;
+		std::cout << "Choose : show all (order(s)), show, deselect (order), (show) complited, read, send (message), logout" << std::endl;
 		std::cin >> str;
+
 		
-		switch(str){
-			
-			case 'show all':
-			case 'all':
+		if('show all' || 'all'){
 			    // TO DO
-			case 'show':
+		}
+		if('show'){
 			    // TO DO
-				break;
-			case 'deselect':
+		}
+		if('deselect'){
+				// TO DO
+		}
+		if('complited'){
+				// TO DO
+		}
+		if('read'){
 			    // TO DO
-			    break;
-			case 'complited':
+		}
+		if('send'){
 			    // TO DO
-			    break;
-			case 'read':
-			    // TO DO
-				break;
-			case 'send':
-			    // TO DO
-			    break;
-			case 'logout':
-			    return;
-			default:
-			   	break;
+		}
+		if('logout'){
+			return;
 		}
 	}
 }

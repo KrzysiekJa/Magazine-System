@@ -24,30 +24,27 @@ void menu(){
 		std::cout << "Choose : show, show all (order(s)), (match) complited, (report) shortages, read, send (message), logout" << std::endl;
 		std::cin >> str;
 		
-		switch(str){
-			
-			case 'show all':
-			case 'all':
+		
+		if('show all' || 'all'){
 			    // TO DO
-			case 'show':
+		}
+		if('show'){
 			    // TO DO
-				break;
-			case 'complited':
+		}
+		if('complited'){
 				// TO DO
-				break;
-			case 'shortages':
+		}
+		if('shortages'){
 			    // TO DO
-			    break;
-			case 'read':
+		}
+		if('read'){
 			    // TO DO
-				break;
-			case 'send':
+		}
+		if('send'){
 			    // TO DO
-			    break;
-			case 'logout':
-			    return;
-			default:
-			   	break;
+		}
+		if('logout'){
+			return;
 		}
 	}
 }

@@ -15,18 +15,14 @@ int main(void)
 		std::cout << "Choose one: create (new employee), login, exit" << std::endl;
 		std::cin >> str;
 		
-		switch(str){
-			
-			case 'create':
+		if('create'){
 			    // creation of profile;
-				break;
-			case 'login':
+		}
+		if('login'){
 			    // log in function;
-			    break;
-			case 'exit':
-			    exit(0);
-			default:
-			   	break;
+		}
+		if('exit'){
+		    exit(0);
 		}
 	}
 	
