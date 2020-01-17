@@ -11,4 +11,15 @@ void Driver::deselectOrder() {
 	// TODO - implement Driver::deselectOrder
 	throw "Not yet implemented";
 }
-// to confirm
+
+string Driver::getInformationClient(int client_id){
+	
+	string zip_code, adress;
+	// znalezc cleinta w bazie
+	// pobrac zipp_code adress
+	
+	string str = zip_code.append(", ");
+	str.append(adress);
+	
+	return str;
+}

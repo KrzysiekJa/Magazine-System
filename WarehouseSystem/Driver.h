@@ -12,7 +12,8 @@ private:
 	Quest quest;
 
 	void deselectOrder();
-
+	
+	string getInformationClient(int client_id);
 };
 
 #endif
