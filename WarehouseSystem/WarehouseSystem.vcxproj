@@ -128,7 +128,6 @@
     <ClInclude Include="Employee.h" />
     <ClInclude Include="Item.h" />
     <ClInclude Include="MagazineWorker.h" />
-    <ClInclude Include="main.h" />
     <ClInclude Include="Message.h" />
     <ClInclude Include="Messenger.h" />
     <ClInclude Include="Order.h" />

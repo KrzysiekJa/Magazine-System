@@ -4,12 +4,6 @@
 #include <sqlite3.h> 
 #include <string>
 
-sqlite3* db;
-char* zErrMsg = 0;
-int rc;
-std::string sql_string;
-const char* sql;
-
 bool Database::checkConnection() {
     /*Checking connection function */
 
@@ -24,11 +18,23 @@ bool Database::checkConnection() {
     }
 }
 
-static int callback(void* NotUsed, int argc, char** argv, char** azColName) {
+int Database::callback(void* NotUsed, int argc, char** argv, char** azColName) {
     int i;
     for (i = 0; i < argc; i++) {
         printf("%s = %s\n", azColName[i], argv[i] ? argv[i] : "NULL");
     }
+    printf("\n");
+    return 0;
+}
+
+int Database::callback(void* data, int argc, char** argv, char** azColName) {
+    int i;
+    fprintf(stderr, "%s: ", (const char*)data);
+
+    for (i = 0; i < argc; i++) {
+        printf("%s = %s\n", azColName[i], argv[i] ? argv[i] : "NULL");
+    }
+
     printf("\n");
     return 0;
 }

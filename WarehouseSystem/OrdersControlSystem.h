@@ -6,7 +6,7 @@ class OrdersControlSystem {
 
 private:
 	Quest quest;
-	Order list_of_orders[];
+	//Order list_of_orders[];
 	int number_of_orders;
 
 	void saveToDB();

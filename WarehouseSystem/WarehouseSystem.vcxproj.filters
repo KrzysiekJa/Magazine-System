@@ -63,9 +63,6 @@
     <ClInclude Include="Person.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
-    <ClInclude Include="main.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
     <ClInclude Include="Database.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>

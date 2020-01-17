@@ -1,7 +1,8 @@
 #ifndef MESSAGE_H
 #define MESSAGE_H
+#include "Database.h"
 #include <string>
-class Message {
+class Message:Database {
 
 private:
 	std::string message;
@@ -9,9 +10,9 @@ private:
 	int id;
 
 public:
-	std::string readMessage(std::string message);
+	std::string readMessage(std::string messageID);
 
-	std::string deleteMessage(std::string message);
+	std::string deleteMessage(std::string messageID);
 };
 
 #endif
