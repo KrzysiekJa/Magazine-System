@@ -33,7 +33,7 @@ void Database::createTable() {
 void Seller::createOrder(std::string product_name, std::string product_amount) {
 	//przy dzidziczeniu wiecej niz jedna klasa nie dziala dziedziczenie database?
 	if (checkConnection()) {
-		sql_string = "INSERT INTO ORDERS (PRODUCTNAME, PRODUCTAMOUNT) VALUES ('" + product_name + "', " + product_amount + "");
+		sql_string = "INSERT INTO ORDERS (PRODUCTNAME, PRODUCTAMOUNT) VALUES ("' + product_name + '", " + product_amount + "");
 
 		sql = sql_string.c_str();
 
@@ -63,25 +63,25 @@ void menu(){
 		std::cin >> str;
 		
 		
-		if('create'){
+		if(str == "create"){
 				// TO DO
 		}
-		if('show all' || 'all'){
+		if(str == "show all" || str == "all"){
 			    // TO DO
 		}
-		if('add'){
+		if(str == "add"){
 				// TO DO
 		}
-		if('receipt'){
+		if(str == "receipt"){
 			    // TO DO
 		}
-		if('read'){
+		if(str == "read"){
 			    // TO DO
 		}
-		if('send'){
+		if(str == "send"){
 			    // TO DO
 		}
-		if('logout'){
+		if(str == "logout"){
 			return;
 		}
 	}

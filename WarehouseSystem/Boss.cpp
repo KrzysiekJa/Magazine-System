@@ -16,22 +16,22 @@ void menu(){
 					
 
 		}
-		if('show all' || 'all'){
+		if(str == "show all" || str == "all"){
 			    // TO DO
 		}
-		if('show'){
+		if(str == "show"){
 			    // TO DO
 		}
-		if('shortages'){
+		if(str == "shortages"){
 			    // TO DO
 		}
-		if('read'){
+		if(str == "read"){
 			    // TO DO
 		}
-		if('send'){
+		if(str == "send"){
 			    // TO DO
 		}
-		if('logout'){
+		if(str == "logout"){
 			return;
 		}
 	}

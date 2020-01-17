@@ -33,25 +33,25 @@ void menu(){
 		std::cin >> str;
 
 		
-		if('show all' || 'all'){
+		if(str == "show all" || str == "all"){
 			    // TO DO
 		}
-		if('show'){
+		if(str == "show"){
 			    // TO DO
 		}
-		if('deselect'){
+		if(str == "deselect"){
 				// TO DO
 		}
-		if('complited'){
+		if(str == "complited"){
 				// TO DO
 		}
-		if('read'){
+		if(str == "read"){
 			    // TO DO
 		}
-		if('send'){
+		if(str == "send"){
 			    // TO DO
 		}
-		if('logout'){
+		if(str == "logout"){
 			return;
 		}
 	}

@@ -15,13 +15,13 @@ int main(void)
 		std::cout << "Choose one: create (new employee), login, exit" << std::endl;
 		std::cin >> str;
 		
-		if('create'){
+		if(str == "create"){
 			    // creation of profile;
 		}
-		if('login'){
+		if(str == "login"){
 			    // log in function;
 		}
-		if('exit'){
+		if(str == "exit"){
 		    exit(0);
 		}
 	}
