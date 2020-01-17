@@ -2,7 +2,7 @@
 #define MESSENGER_H
 #include <string>
 
-class Messenger: public Database {
+class Messenger {
 
 
 public:

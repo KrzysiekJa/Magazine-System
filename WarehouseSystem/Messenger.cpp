@@ -12,9 +12,9 @@ int Database::callback(void* NotUsed, int argc, char** argv, char** azColName) {
 	return 0;
 }
 
-void Messenger::sendMessage(std::string message, std::string receiver, std::string sender) {
+/*void Messenger::sendMessage(std::string message, std::string receiver, std::string sender) {
 	if (checkConnection()) {
-			//sql_string = "INSERT INTO MESSENGER (NAME, SURNAME, PHONE, BIRTHDATE, PESEL) VALUES ('" + name + "', '" + surname + "', " + phone_number + ", " + birth_date + "," + pesel + "); ";
+			sql_string = "INSERT INTO MESSENGER (NAME, SURNAME, PHONE, BIRTHDATE, PESEL) VALUES ('" + name + "', '" + surname + "', " + phone_number + ", " + birth_date + "," + pesel + "); ";
 
 			sql = sql_string.c_str();
 
@@ -30,7 +30,7 @@ void Messenger::sendMessage(std::string message, std::string receiver, std::stri
 			sqlite3_close(db);
 		}
 }
-
+*/
 std::string Messenger::checkMessages(std::string sender, std::string receiver) {
 	
 	//select from ..

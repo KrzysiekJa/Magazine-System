@@ -4,7 +4,7 @@
 
 class Product {
 public:
-	Product::Product(Item n_item, int n_amount):item(n_item), amount(n_amount){}
+	Product(Item n_item, int n_amount):item(n_item), amount(n_amount){}
 	
 private:
 	Item item;
