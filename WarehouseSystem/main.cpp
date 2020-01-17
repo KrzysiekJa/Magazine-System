@@ -12,7 +12,7 @@ int main(void)
 		std::string str;
 		
 		std::cout << "Choose one: create (new employee), login, exit" << std::endl;
-		std::cout >> str;
+		std::cin >> str;
 		
 		switch(str){
 			

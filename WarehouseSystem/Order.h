@@ -1,6 +1,8 @@
 #ifndef ORDER_H
 #define ORDER_H
 #include <string>
+#include <vector>
+
 class Order {
 
 private:
