@@ -15,7 +15,7 @@ private:
 
 	void deselectOrder();
 	
-	string getInformationClient(int client_id);
+	std::string getInformationClient(int client_id);
 };
 
 #endif

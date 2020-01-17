@@ -12,13 +12,13 @@ void Driver::deselectOrder() {
 	throw "Not yet implemented";
 }
 
-string Driver::getInformationClient(int client_id){
+std::string Driver::getInformationClient(int client_id){
 	
-	string zip_code, adress;
+	std::string zip_code, adress;
 	// znalezc cleinta w bazie
 	// pobrac zipp_code adress
 	
-	string str = zip_code.append(", ");
+	std::string str = zip_code.append(", ");
 	str.append(adress);
 	
 	return str;

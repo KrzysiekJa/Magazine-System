@@ -8,8 +8,9 @@ Boss::Boss(std::string Nname, std::string Nsurmane, std::string Nphone_number, i
 		Employee(Nname, Nsurmane, Nphone_number, Nid, Nbirth_date, Npesel) {}
 
 void menu(){
+	std::string str;
 	while(true){
-		std::string str;
+		
 		
 		std::cout << "Choose : show, show all (order(s)), shortages, read, send (message), logout" << std::endl;
 		std::cin >> str;
@@ -35,4 +36,3 @@ void menu(){
 			return;
 		}
 	}
-}

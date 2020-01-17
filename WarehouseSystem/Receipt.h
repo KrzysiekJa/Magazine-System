@@ -4,7 +4,7 @@
 class Receipt {
 
 private:
-	std::string data[];
+	std::string *data;
 
 public:
 	Receipt create(std::string text);

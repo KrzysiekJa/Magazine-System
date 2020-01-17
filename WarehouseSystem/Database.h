@@ -1,22 +1,17 @@
+#ifndef DATABASE_H
+#define DATABASE_H
+
 #include <string>
 #include <iostream>
 #include <sqlite3.h>
 
-class Database
-{
+
+class Database{
 public:
 	bool checkConnection();
 
 	static int callback(void* NotUsed, int argc, char** argv, char** azColName);
 
-	typedef int (*sqlite3_callback)(
-		void*,    /* Data provided in the 4th argument of sqlite3_exec() */
-		int,      /* The number of columns in row */
-		char**,   /* An array of strings representing fields in the row */
-		char**    /* An array of strings representing column names */
-		);
-
-	static int callback(void* data, int argc, char** argv, char** azColName);
 
 	void createTable();
 
@@ -32,3 +27,4 @@ public:
 	const char* data = "Callback function called";
 };
 
+#endif

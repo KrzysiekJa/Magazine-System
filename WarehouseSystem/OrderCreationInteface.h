@@ -10,7 +10,6 @@ private:
 public:
 	Order createOrder(Order order);
 
-	Product addProduct(Product product);
 
 	Order sendOrder(Order order);
 };

@@ -1,7 +1,7 @@
 #include "Message.h"
 #include <string>
 
-std::string Message::readMessage(std::string messageID) {
+ void Message::readMessage(std::string messageID) {
 	if (checkConnection()) {
 		sql_string = "SELECT MESSAGE FROM MESSENGER WHERE ID=" + messageID + ";";
 
@@ -20,7 +20,7 @@ std::string Message::readMessage(std::string messageID) {
 	}
 }
 
-std::string Message::deleteMessage(std::string messageID) {
+void Message::deleteMessage(std::string messageID) {
 	if (checkConnection()) {
 
 		/* Create merged SQL statement */
@@ -35,7 +35,7 @@ std::string Message::deleteMessage(std::string messageID) {
 			sqlite3_free(zErrMsg);
 		}
 		else {
-			fprintf(stdout, "Operation done successfully\n");
+			fprintf(stdout, "Operation done successfully\n"); \
 		}
 		sqlite3_close(db);
 	}

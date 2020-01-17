@@ -1,59 +1,27 @@
-﻿  Boss.cpp
-  Client.cpp
-C:\Users\admin\Warehouse-System\WarehouseSystem\Receipt.h(7,20): warning C4200: użyto niestandardowego rozszerzenia: tablica o rozmiarze zero w typie struct/union
-C:\Users\admin\Warehouse-System\WarehouseSystem\Receipt.h(7,20): message : Ta składowa zostanie zignorowana przez domyślny konstruktor lub kopiujący/przenoszący operator przypisania
-C:\Users\admin\Warehouse-System\WarehouseSystem\Client.h(18,16): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
-C:\Users\admin\Warehouse-System\WarehouseSystem\Client.h(18,16): warning C4183: showReceipts”: Brak typu zwracanego; założono, że jest funkcją składową zwracającą „int”
-C:\Users\admin\Warehouse-System\WarehouseSystem\Client.cpp(7,22): error C2630: znaleziono ";" w czymś co powinno być rozdzielaną przecinkami listą
-C:\Users\admin\Warehouse-System\WarehouseSystem\Client.cpp(7,23): error C2436: „showReceipts”: Funkcja składowa lub zagnieżdżona klasa na liście inicjatora konstruktora
-  Database.cpp
+﻿  Database.cpp
   Driver.cpp
-  Employee.cpp
-  MagazineWorker.cpp
-  main.cpp
-C:\Users\admin\Warehouse-System\WarehouseSystem\main.cpp(17,14): error C2450: wyrażenie switch typu "std::string" jest niedozwolone
-C:\Users\admin\Warehouse-System\WarehouseSystem\main.cpp(17,10): message : Nie jest dostępny żaden operator konwersji zdefiniowany przez użytkownika, który mógłby wykonać tę konwersję lub operator nie może zostać wywołany
-C:\Users\admin\Warehouse-System\WarehouseSystem\main.cpp(19,9): error C2015: zbyt wiele znaków w stałej
-C:\Users\admin\Warehouse-System\WarehouseSystem\main.cpp(22,9): error C2015: zbyt wiele znaków w stałej
-C:\Users\admin\Warehouse-System\WarehouseSystem\main.cpp(22,9): error C2196: wartość case "0" już użyta
-  Message.cpp
-  Messenger.cpp
   OrderCreationInteface.cpp
 C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(8,24): error C3646: "temporally_order": nieznany specyfikator przesłonięcia
 C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(8,24): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
 C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(11,19): error C3646: "createOrder": nieznany specyfikator przesłonięcia
 C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(11,19): error C2059: błąd składniowy: „(”
 C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(11,32): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
-C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(13,20): error C3646: "addProduct": nieznany specyfikator przesłonięcia
-C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(13,20): error C2059: błąd składniowy: „(”
-C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(13,37): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
-C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(15,17): error C3646: "sendOrder": nieznany specyfikator przesłonięcia
-C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(15,17): error C2059: błąd składniowy: „(”
-C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(15,30): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(14,17): error C3646: "sendOrder": nieznany specyfikator przesłonięcia
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(14,17): error C2059: błąd składniowy: „(”
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(14,30): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
 C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.cpp(6,30): error C2039: „createOrder”: Nie jest składową „OrderCreationInteface”
 C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(5): message : zobacz deklarację „OrderCreationInteface”
 C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.cpp(11,32): error C2039: „addProduct”: Nie jest składową „OrderCreationInteface”
 C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(5): message : zobacz deklarację „OrderCreationInteface”
 C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.cpp(16,30): error C2039: „sendOrder”: Nie jest składową „OrderCreationInteface”
 C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(5): message : zobacz deklarację „OrderCreationInteface”
-  OrdersControlSystem.cpp
-  Person.cpp
-  Quest.cpp
-  Receipt.cpp
-C:\Users\admin\Warehouse-System\WarehouseSystem\Receipt.h(7,20): warning C4200: użyto niestandardowego rozszerzenia: tablica o rozmiarze zero w typie struct/union
-C:\Users\admin\Warehouse-System\WarehouseSystem\Receipt.h(7,20): message : Ta składowa zostanie zignorowana przez domyślny konstruktor lub kopiujący/przenoszący operator przypisania
   Seller.cpp
-C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(13,20): error C3646: "addProduct": nieznany specyfikator przesłonięcia
-C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(13,20): error C2059: błąd składniowy: „(”
-C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(13,37): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
-C:\Users\admin\Warehouse-System\WarehouseSystem\Seller.h(13,17): error C3646: "receipt": nieznany specyfikator przesłonięcia
-C:\Users\admin\Warehouse-System\WarehouseSystem\Seller.h(13,17): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
-C:\Users\admin\Warehouse-System\WarehouseSystem\Seller.h(17,21): error C3646: "sendReceipt": nieznany specyfikator przesłonięcia
-C:\Users\admin\Warehouse-System\WarehouseSystem\Seller.h(17,21): error C2059: błąd składniowy: „(”
-C:\Users\admin\Warehouse-System\WarehouseSystem\Seller.h(17,39): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
-C:\Users\admin\Warehouse-System\WarehouseSystem\Receipt.h(7,20): warning C4200: użyto niestandardowego rozszerzenia: tablica o rozmiarze zero w typie struct/union
-C:\Users\admin\Warehouse-System\WarehouseSystem\Receipt.h(7,20): message : Ta składowa zostanie zignorowana przez domyślny konstruktor lub kopiujący/przenoszący operator przypisania
-C:\Users\admin\Warehouse-System\WarehouseSystem\Seller.cpp(15,17): error C2039: „sendReceipt”: Nie jest składową „Seller”
-C:\Users\admin\Warehouse-System\WarehouseSystem\Seller.h(8): message : zobacz deklarację „Seller”
+C:\Users\admin\Warehouse-System\WarehouseSystem\Seller.h(10,16): warning C4584: „Seller”: klasa bazowa „Database” jest już klasą bazową „Employee”
+C:\Users\admin\Warehouse-System\WarehouseSystem\Database.h(9): message : zobacz deklarację „Database”
+C:\Users\admin\Warehouse-System\WarehouseSystem\Employee.h(10): message : zobacz deklarację „Employee”
+C:\Users\admin\Warehouse-System\WarehouseSystem\Seller.h(16,17): error C3646: "receipt": nieznany specyfikator przesłonięcia
+C:\Users\admin\Warehouse-System\WarehouseSystem\Seller.h(16,17): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\admin\Warehouse-System\WarehouseSystem\Seller.h(21,21): error C3646: "sendReceipt": nieznany specyfikator przesłonięcia
+C:\Users\admin\Warehouse-System\WarehouseSystem\Seller.h(21,21): error C2059: błąd składniowy: „(”
+C:\Users\admin\Warehouse-System\WarehouseSystem\Seller.h(21,39): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
   Generowanie kodu...
-C:\Users\admin\Warehouse-System\WarehouseSystem\Messenger.cpp(39): error C4716: "Messenger::checkMessages": musi zwracać wartość

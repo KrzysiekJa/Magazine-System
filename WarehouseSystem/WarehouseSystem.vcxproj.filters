@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ClientInformatio.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
     <ClInclude Include="OrdersControlSystem.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>

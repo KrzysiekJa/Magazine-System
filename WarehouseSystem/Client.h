@@ -6,20 +6,20 @@
 #include "OrdersControlSystem.h"
 #include "Receipt.h"
 #include "Client.h"
-#include "ClientInformation.h"
+#include "Driver.h"
 
 
 class Client : Person, OrdersControlSystem {
-	friend Driver::getInformationClient;
+	friend class Driver;
 
 public:
-	Receipt receipt[];
+	Receipt *receipt;
 	std::string zip_code;
 	std::string adress;
 
 	Client(std::string Nname, std::string Nsurmane, std::string Nphone_number, int Nid, std::string Nzip_code, std::string Nadress);
 	
-	showReceipts();
+	void showReceipts();
 
 };
 

@@ -7,13 +7,14 @@
 
 
 
-class Seller : Employee, OrderCreationInteface, Database {
+class Seller : Employee, OrderCreationInteface{
 public:
 	Seller(std::string Nname, std::string Nsurmane, std::string Nphone_number, int Nid, std::string Nbirth_date, int Npesel);
 	
 	void menu(){};
 
 	Receipt receipt;
+	Database db;
 	
 private:
 	void createOrder(std::string product_name, std::string product_amount);

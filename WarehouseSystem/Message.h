@@ -10,9 +10,9 @@ private:
 	int id;
 
 public:
-	std::string readMessage(std::string messageID);
+	void readMessage(std::string messageID);
 
-	std::string deleteMessage(std::string messageID);
+	void deleteMessage(std::string messageID);
 };
 
 #endif

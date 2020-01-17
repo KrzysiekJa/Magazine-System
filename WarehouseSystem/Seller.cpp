@@ -30,10 +30,10 @@ void Database::createTable() {
 	}
 }
 
-void Seller::createOrder(std::string product_name, std::string product_amount) {
+/*void Seller::createOrder(std::string product_name, std::string product_amount) {
 	//przy dzidziczeniu wiecej niz jedna klasa nie dziala dziedziczenie database?
 	if (checkConnection()) {
-		sql_string = "INSERT INTO ORDERS (PRODUCTNAME, PRODUCTAMOUNT) VALUES ("' + product_name + '", " + product_amount + "");
+		sql_string = "INSERT INTO ORDERS (PRODUCTNAME, PRODUCTAMOUNT) VALUES ('" + product_name + "', " + product_amount + "");
 
 		sql = sql_string.c_str();
 
@@ -48,9 +48,9 @@ void Seller::createOrder(std::string product_name, std::string product_amount) {
 		}
 		sqlite3_close(db);
 	}
-}
+}*/
 
-Receipt Seller::sendReceipt(std::string text) {
+Receipt sendReceipt(std::string text) {
 	// TODO - implement Saller::sendReceipt
 	throw "Not yet implemented";
 }

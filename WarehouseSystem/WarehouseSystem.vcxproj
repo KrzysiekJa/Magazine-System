@@ -122,7 +122,6 @@
   <ItemGroup>
     <ClInclude Include="Boss.h" />
     <ClInclude Include="Client.h" />
-    <ClInclude Include="ClientInformatio.h" />
     <ClInclude Include="Database.h" />
     <ClInclude Include="Driver.h" />
     <ClInclude Include="Employee.h" />

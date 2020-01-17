@@ -10,7 +10,7 @@ public:
 
 	void sendMessage(std::string message, std::string receiver, std::string sender);
 
-	std::string checkMessages(std::string sender, std::string receiver);
+	void checkMessages(std::string sender, std::string receiver);
 };
 
 #endif
