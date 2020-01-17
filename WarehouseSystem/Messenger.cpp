@@ -28,7 +28,6 @@ void Database::createTable() {
 }
 
 
-
 void Messenger::sendMessage(std::string message, std::string receiver, std::string sender) {
 	if (checkConnection()) {
 			sql_string = "INSERT INTO MESSENGER (RECEIVER, SENDER, MESSAGE) VALUES ('" + receiver + "', '" + sender + "', " + message + "); ";
