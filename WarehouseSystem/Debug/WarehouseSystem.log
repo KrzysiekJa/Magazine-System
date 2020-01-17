@@ -1,0 +1,146 @@
+﻿  Boss.cpp
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,7): error C2039: „vector”: Nie jest składową „std”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\string(24): message : zobacz deklarację „std”
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,13): error C2143: błąd składniowy: brakuje „;” przed „<”
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,13): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,21): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(8,24): warning C4200: użyto niestandardowego rozszerzenia: tablica o rozmiarze zero w typie struct/union
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(8,24): message : Ta składowa zostanie zignorowana przez domyślny konstruktor lub kopiujący/przenoszący operator przypisania
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(9,21): error C2229: class "Order" ma niedozwolony zerowy rozmiar tablicy
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrdersControlSystem.h(8,24): warning C4200: użyto niestandardowego rozszerzenia: tablica o rozmiarze zero w typie struct/union
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrdersControlSystem.h(8,24): message : Ta składowa zostanie zignorowana przez domyślny konstruktor lub kopiujący/przenoszący operator przypisania
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrdersControlSystem.h(9,22): error C2229: class "OrdersControlSystem" ma niedozwolony zerowy rozmiar tablicy
+  Client.cpp
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,7): error C2039: „vector”: Nie jest składową „std”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\string(24): message : zobacz deklarację „std”
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,13): error C2143: błąd składniowy: brakuje „;” przed „<”
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,13): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,21): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(8,24): warning C4200: użyto niestandardowego rozszerzenia: tablica o rozmiarze zero w typie struct/union
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(8,24): message : Ta składowa zostanie zignorowana przez domyślny konstruktor lub kopiujący/przenoszący operator przypisania
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(9,21): error C2229: class "Order" ma niedozwolony zerowy rozmiar tablicy
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrdersControlSystem.h(8,24): warning C4200: użyto niestandardowego rozszerzenia: tablica o rozmiarze zero w typie struct/union
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrdersControlSystem.h(8,24): message : Ta składowa zostanie zignorowana przez domyślny konstruktor lub kopiujący/przenoszący operator przypisania
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrdersControlSystem.h(9,22): error C2229: class "OrdersControlSystem" ma niedozwolony zerowy rozmiar tablicy
+C:\Users\admin\Warehouse-System\WarehouseSystem\Receipt.h(7,20): warning C4200: użyto niestandardowego rozszerzenia: tablica o rozmiarze zero w typie struct/union
+C:\Users\admin\Warehouse-System\WarehouseSystem\Receipt.h(7,20): message : Ta składowa zostanie zignorowana przez domyślny konstruktor lub kopiujący/przenoszący operator przypisania
+C:\Users\admin\Warehouse-System\WarehouseSystem\Client.h(18,16): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\admin\Warehouse-System\WarehouseSystem\Client.h(18,16): warning C4183: showReceipts”: Brak typu zwracanego; założono, że jest funkcją składową zwracającą „int”
+C:\Users\admin\Warehouse-System\WarehouseSystem\Client.cpp(7,22): error C2630: znaleziono ";" w czymś co powinno być rozdzielaną przecinkami listą
+C:\Users\admin\Warehouse-System\WarehouseSystem\Client.cpp(7,23): error C2436: „showReceipts”: Funkcja składowa lub zagnieżdżona klasa na liście inicjatora konstruktora
+  Database.cpp
+  Driver.cpp
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,7): error C2039: „vector”: Nie jest składową „std”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\string(24): message : zobacz deklarację „std”
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,13): error C2143: błąd składniowy: brakuje „;” przed „<”
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,13): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,21): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(8,24): warning C4200: użyto niestandardowego rozszerzenia: tablica o rozmiarze zero w typie struct/union
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(8,24): message : Ta składowa zostanie zignorowana przez domyślny konstruktor lub kopiujący/przenoszący operator przypisania
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(9,21): error C2229: class "Order" ma niedozwolony zerowy rozmiar tablicy
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrdersControlSystem.h(8,24): warning C4200: użyto niestandardowego rozszerzenia: tablica o rozmiarze zero w typie struct/union
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrdersControlSystem.h(8,24): message : Ta składowa zostanie zignorowana przez domyślny konstruktor lub kopiujący/przenoszący operator przypisania
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrdersControlSystem.h(9,22): error C2229: class "OrdersControlSystem" ma niedozwolony zerowy rozmiar tablicy
+  Employee.cpp
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,7): error C2039: „vector”: Nie jest składową „std”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\string(24): message : zobacz deklarację „std”
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,13): error C2143: błąd składniowy: brakuje „;” przed „<”
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,13): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,21): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(8,24): warning C4200: użyto niestandardowego rozszerzenia: tablica o rozmiarze zero w typie struct/union
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(8,24): message : Ta składowa zostanie zignorowana przez domyślny konstruktor lub kopiujący/przenoszący operator przypisania
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(9,21): error C2229: class "Order" ma niedozwolony zerowy rozmiar tablicy
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrdersControlSystem.h(8,24): warning C4200: użyto niestandardowego rozszerzenia: tablica o rozmiarze zero w typie struct/union
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrdersControlSystem.h(8,24): message : Ta składowa zostanie zignorowana przez domyślny konstruktor lub kopiujący/przenoszący operator przypisania
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrdersControlSystem.h(9,22): error C2229: class "OrdersControlSystem" ma niedozwolony zerowy rozmiar tablicy
+  MagazineWorker.cpp
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,7): error C2039: „vector”: Nie jest składową „std”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\string(24): message : zobacz deklarację „std”
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,13): error C2143: błąd składniowy: brakuje „;” przed „<”
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,13): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,21): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(8,24): warning C4200: użyto niestandardowego rozszerzenia: tablica o rozmiarze zero w typie struct/union
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(8,24): message : Ta składowa zostanie zignorowana przez domyślny konstruktor lub kopiujący/przenoszący operator przypisania
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(9,21): error C2229: class "Order" ma niedozwolony zerowy rozmiar tablicy
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrdersControlSystem.h(8,24): warning C4200: użyto niestandardowego rozszerzenia: tablica o rozmiarze zero w typie struct/union
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrdersControlSystem.h(8,24): message : Ta składowa zostanie zignorowana przez domyślny konstruktor lub kopiujący/przenoszący operator przypisania
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrdersControlSystem.h(9,22): error C2229: class "OrdersControlSystem" ma niedozwolony zerowy rozmiar tablicy
+C:\Users\admin\Warehouse-System\WarehouseSystem\MagazineWorker.h(12,1): error C2143: błąd składniowy: brakuje „;” przed „private”
+  main.cpp
+C:\Users\admin\Warehouse-System\WarehouseSystem\main.cpp(15,13): error C2676: dwuargumentowy ">>": "std::ostream" nie definiuje tego operatora lub konwersji do typu akceptowalnego dla wstępnie zdefiniowanego operatora
+C:\Users\admin\Warehouse-System\WarehouseSystem\main.cpp(17,14): error C2450: wyrażenie switch typu "std::string" jest niedozwolone
+C:\Users\admin\Warehouse-System\WarehouseSystem\main.cpp(17,10): message : Nie jest dostępny żaden operator konwersji zdefiniowany przez użytkownika, który mógłby wykonać tę konwersję lub operator nie może zostać wywołany
+C:\Users\admin\Warehouse-System\WarehouseSystem\main.cpp(19,9): error C2015: zbyt wiele znaków w stałej
+C:\Users\admin\Warehouse-System\WarehouseSystem\main.cpp(22,9): error C2015: zbyt wiele znaków w stałej
+C:\Users\admin\Warehouse-System\WarehouseSystem\main.cpp(22,9): error C2196: wartość case "0" już użyta
+  Message.cpp
+  OrderCreationInteface.cpp
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(7,24): error C3646: "temporally_order": nieznany specyfikator przesłonięcia
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(7,24): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(10,19): error C3646: "createOrder": nieznany specyfikator przesłonięcia
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(10,19): error C2059: błąd składniowy: „(”
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(10,32): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(12,20): error C3646: "addProduct": nieznany specyfikator przesłonięcia
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(12,20): error C2059: błąd składniowy: „(”
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(12,37): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(14,17): error C3646: "sendOrder": nieznany specyfikator przesłonięcia
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(14,17): error C2059: błąd składniowy: „(”
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(14,30): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,7): error C2039: „vector”: Nie jest składową „std”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\string(24): message : zobacz deklarację „std”
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,13): error C2143: błąd składniowy: brakuje „;” przed „<”
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,13): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,21): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(8,24): warning C4200: użyto niestandardowego rozszerzenia: tablica o rozmiarze zero w typie struct/union
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(8,24): message : Ta składowa zostanie zignorowana przez domyślny konstruktor lub kopiujący/przenoszący operator przypisania
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(9,21): error C2229: class "Order" ma niedozwolony zerowy rozmiar tablicy
+C:\Users\admin\Warehouse-System\WarehouseSystem\Item.h(7,7): error C2039: „vector”: Nie jest składową „std”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\string(24): message : zobacz deklarację „std”
+C:\Users\admin\Warehouse-System\WarehouseSystem\Item.h(7,13): error C2143: błąd składniowy: brakuje „;” przed „<”
+C:\Users\admin\Warehouse-System\WarehouseSystem\Item.h(7,13): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\admin\Warehouse-System\WarehouseSystem\Item.h(7,26): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.cpp(5,30): error C2039: „createOrder”: Nie jest składową „OrderCreationInteface”
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(4): message : zobacz deklarację „OrderCreationInteface”
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.cpp(10,32): error C2039: „addProduct”: Nie jest składową „OrderCreationInteface”
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(4): message : zobacz deklarację „OrderCreationInteface”
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.cpp(15,30): error C2039: „sendOrder”: Nie jest składową „OrderCreationInteface”
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrderCreationInteface.h(4): message : zobacz deklarację „OrderCreationInteface”
+  OrdersControlSystem.cpp
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,7): error C2039: „vector”: Nie jest składową „std”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\string(24): message : zobacz deklarację „std”
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,13): error C2143: błąd składniowy: brakuje „;” przed „<”
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,13): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,21): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(8,24): warning C4200: użyto niestandardowego rozszerzenia: tablica o rozmiarze zero w typie struct/union
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(8,24): message : Ta składowa zostanie zignorowana przez domyślny konstruktor lub kopiujący/przenoszący operator przypisania
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(9,21): error C2229: class "Order" ma niedozwolony zerowy rozmiar tablicy
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrdersControlSystem.h(8,24): warning C4200: użyto niestandardowego rozszerzenia: tablica o rozmiarze zero w typie struct/union
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrdersControlSystem.h(8,24): message : Ta składowa zostanie zignorowana przez domyślny konstruktor lub kopiujący/przenoszący operator przypisania
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrdersControlSystem.h(9,22): error C2229: class "OrdersControlSystem" ma niedozwolony zerowy rozmiar tablicy
+  Person.cpp
+  Quest.cpp
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,7): error C2039: „vector”: Nie jest składową „std”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\string(24): message : zobacz deklarację „std”
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,13): error C2143: błąd składniowy: brakuje „;” przed „<”
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,13): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,21): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(8,24): warning C4200: użyto niestandardowego rozszerzenia: tablica o rozmiarze zero w typie struct/union
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(8,24): message : Ta składowa zostanie zignorowana przez domyślny konstruktor lub kopiujący/przenoszący operator przypisania
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(9,21): error C2229: class "Order" ma niedozwolony zerowy rozmiar tablicy
+  Receipt.cpp
+C:\Users\admin\Warehouse-System\WarehouseSystem\Receipt.h(7,20): warning C4200: użyto niestandardowego rozszerzenia: tablica o rozmiarze zero w typie struct/union
+C:\Users\admin\Warehouse-System\WarehouseSystem\Receipt.h(7,20): message : Ta składowa zostanie zignorowana przez domyślny konstruktor lub kopiujący/przenoszący operator przypisania
+  Seller.cpp
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,7): error C2039: „vector”: Nie jest składową „std”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\string(24): message : zobacz deklarację „std”
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,13): error C2143: błąd składniowy: brakuje „;” przed „<”
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,13): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(7,21): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(8,24): warning C4200: użyto niestandardowego rozszerzenia: tablica o rozmiarze zero w typie struct/union
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(8,24): message : Ta składowa zostanie zignorowana przez domyślny konstruktor lub kopiujący/przenoszący operator przypisania
+C:\Users\admin\Warehouse-System\WarehouseSystem\Order.h(9,21): error C2229: class "Order" ma niedozwolony zerowy rozmiar tablicy
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrdersControlSystem.h(8,24): warning C4200: użyto niestandardowego rozszerzenia: tablica o rozmiarze zero w typie struct/union
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrdersControlSystem.h(8,24): message : Ta składowa zostanie zignorowana przez domyślny konstruktor lub kopiujący/przenoszący operator przypisania
+C:\Users\admin\Warehouse-System\WarehouseSystem\OrdersControlSystem.h(9,22): error C2229: class "OrdersControlSystem" ma niedozwolony zerowy rozmiar tablicy
+C:\Users\admin\Warehouse-System\WarehouseSystem\Seller.h(5,10): fatal error C1083: Nie można otworzyć pliku dołącz: 'OrderCreationInteface': No such file or directory
+  Generowanie kodu...

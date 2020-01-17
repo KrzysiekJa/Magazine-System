@@ -1,6 +1,7 @@
 #ifndef QUEST_H
 #define QUEST_H
 #include "ClientInformatio.h"
+#include "Order.h"
 class Quest {
 
 private:
