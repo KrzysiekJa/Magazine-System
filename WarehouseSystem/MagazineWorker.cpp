@@ -1,5 +1,6 @@
-#include "MagazineWorker.h"
+#include <iostream>
 #include <string>
+#include "MagazineWorker.h"
 #include "Order.h"
 
 

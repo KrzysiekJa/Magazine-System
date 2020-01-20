@@ -1,8 +1,10 @@
 #ifndef ORDERSCONTROLSYSTEM_H
 #define ORDERSCONTROLSYSTEM_H
+#include "Database.h"
 #include "Quest.h"
 
-class OrdersControlSystem {
+
+class OrdersControlSystem : Database {
 
 private:
 	Quest quest;

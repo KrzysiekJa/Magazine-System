@@ -1,4 +1,3 @@
-#include <string>
 #include <iostream>
 #include <string>
 #include "Database.h"
@@ -12,7 +11,7 @@ void menu(){
 	while(true){
 		
 		
-		std::cout << "Choose : show, show all (order(s)), shortages, read, send (message), logout" << std::endl;
+		std::cout << "Choose : show, show all (order(s)), add (product), shortages, read, send (message), logout" << std::endl;
 		std::cin >> str;
 					
 
@@ -22,6 +21,9 @@ void menu(){
 		}
 		if(str == "show"){
 			    // TO DO
+		}
+		if(str == "add"){
+				// TO DO
 		}
 		if(str == "shortages"){
 			    // TO DO

@@ -2,7 +2,9 @@
 #define MESSAGE_H
 #include "Database.h"
 #include <string>
-class Message:Database {
+
+
+class Message : Database {
 
 private:
 	std::string message;

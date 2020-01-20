@@ -1,8 +1,9 @@
 #ifndef ORDERCREATIONINTEFACE_H
 #define ORDERCREATIONINTEFACE_H
+#include "Database.h"
 
 
-class OrderCreationInteface {
+class OrderCreationInteface : Database {
 
 private:
 	Order temporally_order;

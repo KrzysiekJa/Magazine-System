@@ -3,7 +3,7 @@
 #include <string>
 #include "Database.h"
 
-class Messenger:Database {
+class Messenger : Database {
 
 
 public:

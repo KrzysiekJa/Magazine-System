@@ -1,4 +1,5 @@
 #include "OrdersControlSystem.h"
+#include "Database.h"
 #include "Order.h"
 
 void OrdersControlSystem::saveToDB() {
