@@ -4,8 +4,7 @@
 #include "Order.h"
 #include "Receipt.h"
 
-Seller::Seller(std::string Nname, std::string Nsurmane, std::string Nphone_number, int Nid, std::string Nbirth_date, int Npesel): 
-			Employee(Nname, Nsurmane, Nphone_number, Nid, Nbirth_date, Npesel) {}
+Seller::Seller(int n_id): Employee(int n_id) {}
 
 void Database::createTable() {
 	/*Create new tables in database*/
