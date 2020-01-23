@@ -1,7 +1,5 @@
 #include "OrderCreationInteface.h"
 #include "Database.h"
-#include "Order.h"
-#include "Product.h"
 
 
 Order OrderCreationInteface::createOrder(Order order) {
