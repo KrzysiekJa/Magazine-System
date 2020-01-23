@@ -4,6 +4,7 @@
 #include "Person.h"
 #include "Messenger.h"
 #include "OrdersControlSystem.h"
+#include "Database.h"
 
 
 class Employee : Person, OrdersControlSystem, Messenger {

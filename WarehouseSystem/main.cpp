@@ -13,8 +13,8 @@
 int main(void)
 {
 	Database db;
-	std::string str, name, surname, phone_number, zip_code, address, pesel, birth_date;
-	
+	std::string id_str, password_str, str, name, surname, phone_number, zip_code, address, pesel, birth_date;
+
 	while(true){
 		
 		std::cout << "Choose one: create (new employee), login, exit" << std::endl;
@@ -44,7 +44,6 @@ int main(void)
 			}
 		}
 		if(str == "login"){
-			std::string id_str, password_str;
 			
 			std::cout << "Your id : ";
 			std::cin  >> id_str;
