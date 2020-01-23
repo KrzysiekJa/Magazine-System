@@ -4,7 +4,7 @@
 #include "Order.h"
 #include "Receipt.h"
 
-Seller::Seller(int n_id): Employee(int n_id) {}
+Seller::Seller(int n_id): Employee(n_id) {}
 
 void Database::createTable() {
 	/*Create new tables in database*/

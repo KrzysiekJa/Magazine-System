@@ -2,7 +2,7 @@
 #include <string>
 #include "Employee.h"
 
-Employee::Employee(int Nid): Person(Nid) {}
+Employee::Employee(int n_id): Person(n_id) {}
 
 void Employee::personShowData() {
 	showData();

@@ -4,7 +4,7 @@
 #include "Order.h"
 
 
-Driver::Driver(int n_id): Employee(int n_id) {}
+Driver::Driver(int n_id): Employee(n_id) {}
 
 
 void Driver::deselectOrder() {

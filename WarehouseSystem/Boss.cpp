@@ -3,7 +3,7 @@
 #include "Database.h"
 #include "Boss.h"
 
-Boss::Boss(int n_id): Employee(int n_id) {}
+Boss::Boss(int n_id): Employee(n_id) {}
 
 void menu(){
 	std::string str;

@@ -4,7 +4,7 @@
 #include "Order.h"
 
 
-MagazineWorker::MagazineWorker(int n_id): Employee(int n_id) {}
+MagazineWorker::MagazineWorker(int n_id): Employee(n_id) {}
 
 
 std::string MagazineWorker::reportShortages() {
