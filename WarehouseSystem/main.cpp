@@ -12,8 +12,8 @@
 
 int main(void)
 {
-	//Database db.checkConnection();
-	std::string str;
+	Database db;
+	std::string str, name, surname, phone_number, zip_code, address, pesel, birth_date;
 	
 	while(true){
 		
@@ -25,20 +25,31 @@ int main(void)
 			std::cin >> str;
 			
 			if(str == "client"){
-				//db.addClientToDB();
-				// o ile sie nie obrazisz ;)
+				std::cin >> name;
+				std::cin >> surname;
+				std::cin >> phone_number;
+				std::cin >> zip_code;
+				std::cin >> address;
+
+				db.addClientToDB(name, surname, phone_number, zip_code, address);
 			}
 			if(str == "employee"){
-				//db.addEmployeeToDB();
+				std::cin >> name;
+				std::cin >> surname;
+				std::cin >> phone_number;
+				std::cin >> pesel;
+				std::cin >> birth_date;
+
+				db.addEmployeeToDB(name, surname, phone_number, pesel, birth_date);
 			}
 		}
 		if(str == "login"){
-			/*std::string id_str, password_str;
+			std::string id_str, password_str;
 			
 			std::cout << "Your id : ";
-			std::cin << id_str;
+			std::cin  >> id_str;
 			std::cout << "Your password : ";
-			std::cin << password_str; */
+			std::cin >> password_str; 
 			
 			// login function
 			
