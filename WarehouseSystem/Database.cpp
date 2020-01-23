@@ -68,9 +68,9 @@ void Database::createTable() {
 }
 
 
-void Database::addPersonToDB(std::string table_name, std::string name, std::string surname, std::string phone_number, std::string birth_date, std::string pesel) { 
+void Database::addClientToDB(std::string name, std::string surname, std::string phone_number, std::string zip_code, std::string address) {
 	if (checkConnection()) {
-		sql_string = "INSERT INTO "+table_name+" (NAME, SURNAME, PHONE, BIRTHDATE, PESEL) VALUES ('" + name + "', '" + surname + "', " + phone_number +", " + birth_date + "," + pesel + "); ";
+		sql_string = "INSERT INTO CLIENTS (NAME, SURNAME, PHONE_NUMBER, ZIP_CODE, ADDRESS) VALUES ('" + name + "', '" + surname + "', " + phone_number + ", " + zip_code + "," + address + "); ";
 
 		sql = sql_string.c_str();
 
@@ -87,9 +87,9 @@ void Database::addPersonToDB(std::string table_name, std::string name, std::stri
 	}
 }
 
-void Database::addUserToDB(std::string login, std::string password) {
+void Database::addEmployeeToDB(std::string name, std::string surname, std::string phone_number, std::string pesel, std::string birth_date) {
 	if (checkConnection()) {
-		sql_string = "INSERT INTO USERS (login, password) VALUES ('" + login + "', '" + password + "'); ";
+		sql_string = "INSERT INTO EMPLOYERS (NAME, SURNAME, PHONE_NUMBER, PESEL, BIRTH_DATE, PASSWORD) VALUES ('" + name + "', '" + surname + "', " + phone_number + ", " + birth_date + "," + pesel + ", 0000); ";
 
 		sql = sql_string.c_str();
 

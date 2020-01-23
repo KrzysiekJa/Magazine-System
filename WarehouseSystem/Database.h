@@ -15,10 +15,8 @@ public:
 
 	void createTable();
 
-	void addPersonToDB(std::string table_name, std::string name, std::string surname, std::string phone_number, std::string birth_date, std::string pesel);
-
-	void addUserToDB(std::string login, std::string password);
-
+	void addClientToDB(std::string name, std::string surname, std::string phone_number, std::string zip_code, std::string address);
+	void addEmployeeToDB(std::string name, std::string surname, std::string phone_number, std::string pesel, std::string birth_date);
 	sqlite3* db;
 	char* zErrMsg = 0;
 	int rc;
