@@ -79,9 +79,9 @@ void Database::addClientToDB(std::string name, std::string surname, std::string 
     }
 }
 
-void Database::addEmployeeToDB(std::string name, std::string surname, std::string phone_number, std::string pesel, std::string birth_date) {
+void Database::addEmployeeToDB(std::string name, std::string surname, std::string phone_number, std::string pesel, std::string birth_date, std::string password) {
     if (checkConnection()) {
-        sql_string = "INSERT INTO EMPLOYERS (NAME, SURNAME, PHONE_NUMBER, PESEL, BIRTH_DATE, PASSWORD) VALUES ('" + name + "', '" + surname + "', " + phone_number + "," + pesel + ", '" + birth_date + "', '0000'); ";
+        sql_string = "INSERT INTO EMPLOYERS (NAME, SURNAME, PHONE_NUMBER, PESEL, BIRTH_DATE, PASSWORD) VALUES ('" + name + "', '" + surname + "', " + phone_number + "," + pesel + ", '" + birth_date + "', '"+ password +"'); ";
 
         sql = sql_string.c_str();
 
