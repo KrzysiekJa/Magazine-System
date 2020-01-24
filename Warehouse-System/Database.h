@@ -20,6 +20,7 @@ public:
 						 std::string birth_date, std::string password,);
 	string login(std::string username, std::string password);
 	
+
 	sqlite3* db;
 	char* zErrMsg = 0;
 	int rc;
