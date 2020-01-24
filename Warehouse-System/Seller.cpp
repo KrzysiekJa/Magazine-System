@@ -7,27 +7,6 @@
 Seller::Seller(int n_id) : Employee(n_id) {}
 
 
-
-/*void Seller::createOrder(std::string product_name, std::string product_amount) {
-	//przy dzidziczeniu wiecej niz jedna klasa nie dziala dziedziczenie database?
-	if (checkConnection()) {
-		sql_string = "INSERT INTO ORDERS (PRODUCTNAME, PRODUCTAMOUNT) VALUES ('" + product_name + "', " + product_amount + "");
-
-		sql = sql_string.c_str();
-
-		rc = sqlite3_exec(db, sql, callback, 0, &zErrMsg);
-
-		if (rc != SQLITE_OK) {
-			fprintf(stderr, "SQL error: %s\n", zErrMsg);
-			sqlite3_free(zErrMsg);
-		}
-		else {
-			fprintf(stdout, "Records created successfully\n");
-		}
-		sqlite3_close(db);
-	}
-}*/
-
 Receipt sendReceipt(std::string text) {
 	// TODO - implement Saller::sendReceipt
 	throw "Not yet implemented";

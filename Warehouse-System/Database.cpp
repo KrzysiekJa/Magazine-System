@@ -5,6 +5,9 @@
 #include <stdlib.h>
 #include <sqlite3.h> 
 #include <string>
+#include <algorithm>
+#include <cctype>
+#include <vector>
 
 bool Database::checkConnection() {
     /*Checking connection function */
@@ -79,9 +82,9 @@ void Database::addClientToDB(std::string name, std::string surname, std::string 
     }
 }
 
-void Database::addEmployeeToDB(std::string name, std::string surname, std::string phone_number, std::string pesel, std::string birth_date) {
+void Database::addEmployeeToDB(std::string name, std::string surname, std::string position,std::string phone_number, std::string pesel, std::string birth_date, std::string password,) {
     if (checkConnection()) {
-        sql_string = "INSERT INTO EMPLOYERS (NAME, SURNAME, PHONE_NUMBER, PESEL, BIRTH_DATE, PASSWORD) VALUES ('" + name + "', '" + surname + "', " + phone_number + "," + pesel + ", '" + birth_date + "', '0000'); ";
+        sql_string = "INSERT INTO EMPLOYERS (NAME, SURNAME, POSITION, PHONE_NUMBER, PESEL, BIRTH_DATE, PASSWORD) VALUES ('" + name + "', '" + surname + "', '" + position + "', " + phone_number + "," + pesel + ", '" + birth_date + "', '0000'); ";
 
         sql = sql_string.c_str();
 
@@ -98,6 +101,67 @@ void Database::addEmployeeToDB(std::string name, std::string surname, std::strin
     }
 }
 
-void Database::login(std::string user, std::string password) {
 
+int Database::select_callback(void *p_data, int num_fields, char **p_fields, char **p_col_names)
+{
+ 	Records* records = static_cast<Records*>(p_data);
+	
+	try {
+		records->emplace_back(p_fields, p_fields + num_fields);
+	}
+	catch (...) {
+		// abort select on failure, don't let exception propogate thru sqlite3 call-stack
+		return 1;
+	}
+	return 0;
+}
+
+Records Database::select_stmt(const char* stmt)
+{
+	Records records;  
+	char *errmsg;
+	
+	int ret = sqlite3_exec(db, stmt, select_callback, &records, &errmsg);
+	
+	if (ret != SQLITE_OK) {
+		std::cerr << "Error in select statement " << stmt << "[" << errmsg << "]\n";
+	}
+	else {
+		std::cerr << records.size() << " records returned.\n";
+	}
+	
+	return records;
+}
+
+void Database::sql_stmt(const char* stmt)
+{
+	char *errmsg;
+	
+	int ret = sqlite3_exec(db, stmt, 0, 0, &errmsg);
+	if (ret != SQLITE_OK) {
+		std::cerr << "Error in select statement " << stmt << "[" << errmsg << "]\n";
+	}
+}
+
+
+string Database::login(std::string user, std::string password) {
+	string str;
+	
+    if (checkConnection()) {
+		
+		Records records = select_stmt("SELECT FUNCTION FROM EMPLOYEE WHERE ID =" + user + "AND PASSWORD =" + pasword + "");
+		
+		for(auto& record : records){
+			
+			if(record[0] == "ID"){
+				str = record[1];
+				break;
+			}
+		}
+		std::transform(str.begin(), str.end(), str.begin(), [](unsigned char c){ return std::tolower(c); });
+		
+		return str;
+    }
+	
+	return "";
 }

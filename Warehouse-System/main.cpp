@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 #include <cstdlib>
 #include <string>
+#include <conio>
 #include "Database.h"
 #include "Boss.h"
 #include "Seller.h"
@@ -11,7 +12,7 @@
 int main(){
 
 	Database db;
-	std::string id_str, password_str, str, name, surname, phone_number, zip_code, address, pesel, birth_date;
+	std::string id_str, password_str, str, name, surname, position, phone_number, zip_code, address, pesel, birth_date;
 
 	while (true) {
 
@@ -46,6 +47,13 @@ int main(){
 
 				std::cout << "Surname: ";
 				std::cin >> surname;
+				
+				gotoxy(20,1);
+				std::cout << "Password: ";
+				std::cin >> password_str;
+				
+				std::cout << "Position: ";
+				std::cin >> position;
 
 				std::cout << "Phone number: ";
 				std::cin >> phone_number;
@@ -56,18 +64,22 @@ int main(){
 				std::cout << "Birth date: ";
 				std::cin >> birth_date;
 
-				db.addEmployeeToDB(name, surname, phone_number, pesel, birth_date);
+				db.addEmployeeToDB(name, surname, position, phone_number, pesel, birth_date, password_str);
+				password_str = "";
 			}
 		}
 		if (str == "login") {
 
 			std::cout << "Your id : ";
 			std::cin >> id_str;
+			gotoxy(20,1);
 			std::cout << "Your password : ";
 			std::cin >> password_str;
-
-			// login function
-
+			
+			// !!! trzeba dodac kolumnę ID !!!
+			str = db.login(id_str, password_str);
+			password_str = "";
+			
 			if (str == "Boss") {
 				//Boss boss;
 				//boss.menu();
@@ -84,6 +96,7 @@ int main(){
 				//Driver driver;
 				//driver.menu();
 			}
+			id_str = "";
 		}
 		if (str == "exit") {
 			exit(0);

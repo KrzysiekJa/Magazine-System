@@ -11,11 +11,5 @@ public:
 	void menu() {};
 
 	//Receipt receipt; niezidentyfikowany identyfikator przesloniecia
-	//Database db;
-
-private:
-	void createOrder(std::string product_name, std::string product_amount);
-
-	//Receipt sendReceipt(std::string text); blad skladniowy "("
 
 };
