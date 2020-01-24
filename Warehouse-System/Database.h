@@ -5,6 +5,9 @@
 #include <iostream>
 #include <sqlite3.h>
 
+using Record = std::vector<std::string>;
+using Records = std::vector<Record>;
+
 
 class Database {
 public:
@@ -17,8 +20,8 @@ public:
 
 	void addClientToDB(std::string name, std::string surname, std::string phone_number, std::string zip_code, std::string address);
 	void addEmployeeToDB(std::string name, std::string surname, std::string position, std::string phone_number, std::string pesel, 
-						 std::string birth_date, std::string password,);
-	string login(std::string username, std::string password);
+						 std::string birth_date, std::string password);
+	std::string login(std::string username, std::string password);
 	
 
 	sqlite3* db;
@@ -29,8 +32,6 @@ public:
 	const char* data = "Callback function called";
 	
 private:
-	using Record = std::vector<std::string>;
-	using Records = std::vector<Record>;
 	
 	int 	select_callback(void *p_data, int num_fields, char **p_fields, char **p_col_names);
 	Records select_stmt(const char* stmt);

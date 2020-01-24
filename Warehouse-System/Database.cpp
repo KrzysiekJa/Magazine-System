@@ -9,6 +9,10 @@
 #include <cctype>
 #include <vector>
 
+using Record = std::vector<std::string>;
+using Records = std::vector<Record>;
+
+
 bool Database::checkConnection() {
     /*Checking connection function */
 
@@ -144,12 +148,12 @@ void Database::sql_stmt(const char* stmt)
 }
 
 
-string Database::login(std::string user, std::string password) {
-	string str;
+std::string Database::login(std::string user, std::string password) {
+	std::string str;
 	
     if (checkConnection()) {
 		
-		Records records = select_stmt("SELECT FUNCTION FROM EMPLOYEE WHERE ID =" + user + "AND PASSWORD =" + pasword + "");
+		Records records = select_stmt("SELECT FUNCTION FROM EMPLOYEE WHERE ID =" + user + "AND PASSWORD =" + password + "");
 		
 		for(auto& record : records){
 			
