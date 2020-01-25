@@ -77,19 +77,19 @@ int main(){
 			str = db.login(id_str, password_str);
 			password_str = "";
 			
-			if (str == "Boss") {
+			if (str == "boss") {
 				//Boss boss;
 				//boss.bossMenu();
 			}
-			if (str == "Seller") {
+			if (str == "seller") {
 				//Seller seller;
 				//seller.sellerMenu();
 			}
-			if (str == "MagazineWorker") {
+			if (str == "magazineworker") {
 				//MagazineWorker worker;
 				//worker.workerMenu();
 			}
-			if (str == "Driver") {
+			if (str == "driver") {
 				//Driver driver;
 				//driver.driverMenu();
 			}

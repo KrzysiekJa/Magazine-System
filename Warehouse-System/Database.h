@@ -24,6 +24,8 @@ public:
 	std::string login(std::string username, std::string password);
 	
 	void addItem(std::string product_name, int amount);
+	void showOrder(std::string order_id);
+	void showAllOrders(std::string employee_id);
 
 	sqlite3* db;
 	char* zErrMsg = 0;

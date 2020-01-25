@@ -3,6 +3,7 @@
 #include "Database.h"
 #include "Boss.h"
 
+
 Boss::Boss(int n_id) : Employee(n_id) {}
 
 void bossMenu() {
@@ -10,10 +11,8 @@ void bossMenu() {
 
 	while (true) {
 
-
-		std::cout << "Choose : show, show all (order(s)), add (product), shortages, read, send (message), logout" << std::endl;
-		std::cin >> str;
-
+	std::cout << "Choose : show, show all (order(s)), add (product), shortages, read, send (message), logout" << std::endl;
+	std::cin >> str;
 
 	}
 	if (str == "show all" || str == "all") {

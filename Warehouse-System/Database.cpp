@@ -152,7 +152,7 @@ void Database::sql_stmt(const char* stmt)
 std::string Database::login(std::string user, std::string password) {
 
 	std::string str;
-    sql_string = "SELECT POSITION FROM EMPLOYERS WHERE ID =" + user + "AND PASSWORD ='" + password + "'";
+	sql_string = "SELECT POSITION FROM EMPLOYERS WHERE ID =" + user + "AND PASSWORD ='" + password + "'";
     sql = sql_string.c_str();
 	
     if (checkConnection()) {
@@ -199,3 +199,36 @@ void Database::addItem(std::string product_name, int amount){
 }
 
 
+void Database::showOrder(std::string order_id){
+	
+    if (checkConnection()) {
+		
+		sql_string = "SELECT * FROM ORDERS WHERE ID =" + order_id + "";// please fix
+        sql = sql_string.c_str();
+
+        rc = sqlite3_exec(db, sql, callback, 0, &zErrMsg);
+
+        if (rc != SQLITE_OK) {
+            fprintf(stderr, "SQL error: %s\n", zErrMsg);
+            sqlite3_free(zErrMsg);
+        }
+		
+		
+		sql_string = "SELECT * FROM PRODUCTS WHERE ORDER =" + order_id + "";// please fix
+        sql = sql_string.c_str();
+
+        rc = sqlite3_exec(db, sql, callback, 0, &zErrMsg);
+
+        if (rc != SQLITE_OK) {
+            fprintf(stderr, "SQL error: %s\n", zErrMsg);
+            sqlite3_free(zErrMsg);
+        }
+        
+        sqlite3_close(db);
+    }
+}
+
+
+void Database::showAllOrders(std::string employee_id){
+	
+}
