@@ -27,4 +27,3 @@ void Person::showData(std::string id)
 	}
 	sqlite3_close(db);
 }
-*/
