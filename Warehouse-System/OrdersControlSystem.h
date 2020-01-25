@@ -4,17 +4,12 @@
 #include <string>
 
 
-<<<<<<< HEAD
-class OrdersControlSystem : Database {
+class OrdersControlSystem : public Database {
 	friend class Boss;
 	friend class Seller;
 	friend class Driver;
 	friend class MagazineWorker;
-	
-=======
-class OrdersControlSystem : public Database {
 
->>>>>>> 7dca77804ce95cdedc5bb66a7791c64b0153c9f4
 private:
 
 	int number_of_orders;
