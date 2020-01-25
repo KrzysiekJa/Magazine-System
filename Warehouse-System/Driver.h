@@ -6,6 +6,7 @@
 
 class Driver : public Employee {
 public:
+	Database& db;
 	Driver(int n_id);
 
 	void driverMenu() {}

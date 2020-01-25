@@ -10,6 +10,7 @@ using Records = std::vector<Record>;
 
 
 class Database {
+	friend class Driver;
 public:
 	bool checkConnection();
 

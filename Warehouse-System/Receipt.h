@@ -1,7 +1,8 @@
 #pragma once
 
 #include <string>
-class Receipt {
+#include "Database.h"
+class Receipt : Database{
 
 private:
 	std::string* data;

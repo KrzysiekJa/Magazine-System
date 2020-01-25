@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "MagazineWorker.h"
+#include "Database.h"
 
 
 MagazineWorker::MagazineWorker(int n_id) : Employee(n_id) {}
