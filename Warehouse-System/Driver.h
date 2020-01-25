@@ -1,6 +1,8 @@
 #pragma once
 
 #include "Employee.h"
+#include <string>
+
 
 class Driver : Employee {
 public:
@@ -9,7 +11,7 @@ public:
 	void driverMenu() {}
 
 private:
-	Quest quest;
+	std::string quest;
 
 	void deselectOrder();
 

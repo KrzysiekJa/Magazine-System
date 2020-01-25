@@ -1,18 +1,14 @@
 #pragma once
 
 #include "Database.h"
-#include "Order.h"
-#include "Product.h"
+#include <string>
 
 
 class OrderCreationInteface : Database {
 
-private:
-	Order temporally_order;
-
 public:
-	Order createOrder(Order order);
+	void createOrder(std::string order);
 
-	Product addProduct(Product product);
-	Order sendOrder(Order order);
+	void addProduct(std::string product);
+	void sendOrder(std::string order);
 };

@@ -11,15 +11,15 @@ private:
 
 	void saveToDB();
 
-	Order loadFromDB();
+	void loadFromDB();
 
 public:
 	void getNewOrder();
 
-	Order showListOfOrdres();
+	void showListOfOrdres();
 
-	Order showOrder();
+	void showOrder();
 
 private:
-	Order sendQuest();
+	void sendQuest();
 };

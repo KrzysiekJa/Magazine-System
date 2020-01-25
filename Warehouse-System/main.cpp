@@ -1,13 +1,13 @@
 ﻿#include <iostream>
 #include <cstdlib>
 #include <string>
-#include <conio.h> // czy dziala xd
 #include "Database.h"
 #include "Boss.h"
 #include "Seller.h"
 #include "MagazineWorker.h"
 #include "Driver.h"
 #include "Client.h"
+#include "functions.hpp"
 
 int main(){
 
@@ -48,11 +48,7 @@ int main(){
 				std::cout << "Surname: ";
 				std::cin >> surname;
 				
-				gotoxy(20,1);
-				// https://stackoverflow.com/questions/37772842/masking-password-in-c-login-program
-				// http://www.cplusplus.com/articles/E6vU7k9E/
-				std::cout << "Password: ";
-				std::cin >> password_str;
+				password_str = functions::login();
 				
 				std::cout << "Position: ";
 				std::cin >> position;
@@ -74,7 +70,7 @@ int main(){
 
 			std::cout << "Your id : ";
 			std::cin >> id_str;
-			gotoxy(20,1);
+			
 			std::cout << "Your password : ";
 			std::cin >> password_str;
 			
