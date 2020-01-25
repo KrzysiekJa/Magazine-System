@@ -12,7 +12,7 @@ void Person::showData(std::string id)
 {
 	if (checkConnection()) {
 
-		sql_string = "SELECT NAME, SURNAME, PHONE_NUMBER FROM EMPLOYERS WHERE ID = " + id + "";
+		sql_string = "SELECT ID, NAME, SURNAME, PHONE_NUMBER FROM EMPLOYERS WHERE ID = " + id + "";
 		sql = sql_string.c_str();
 
 		rc = sqlite3_exec(db, sql, callback, (void*)data, &zErrMsg);

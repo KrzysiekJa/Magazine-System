@@ -6,14 +6,46 @@
 MagazineWorker::MagazineWorker(int n_id) : Employee(n_id) {}
 
 
-std::string MagazineWorker::reportShortages() {
-	// TODO - implement MagazineWorker::reportShortages
-	throw "Not yet implemented";
+void MagazineWorker::reportShortages(std::string id) {
+	
+	if (checkConnection()) {
+		sql_string = "UPDATE PRODUCTS SET STATUS = ' TU WPISAC' WHERE ID = " + id + "";
+		sql = sql_string.c_str();
+
+
+		rc = sqlite3_exec(db, sql, callback, (void*)data, &zErrMsg);
+
+		if (rc != SQLITE_OK) {
+			fprintf(stderr, "SQL error: %s\n", zErrMsg);
+			sqlite3_free(zErrMsg);
+		}
+		else {
+			fprintf(stdout, "Operation done successfully\n");
+		}
+	}
+	sqlite3_close(db);
+
 }
 
-void MagazineWorker::sendOdrerToDriver() {
-	// TODO - implement MagazineWorker::sendOdrerToDriver
-	throw "Not yet implemented";
+void MagazineWorker::sendOdrerToDriver(std::string id) {
+	
+	if (checkConnection()) {
+		sql_string = "UPDATE ORDERS SET STATUS = 'TU WPISAC' WHERE ID = " + id + "";
+		sql = sql_string.c_str();
+
+
+		rc = sqlite3_exec(db, sql, callback, (void*)data, &zErrMsg);
+
+		if (rc != SQLITE_OK) {
+			fprintf(stderr, "SQL error: %s\n", zErrMsg);
+			sqlite3_free(zErrMsg);
+		}
+		else {
+			fprintf(stdout, "Operation done successfully\n");
+		}
+	}
+	sqlite3_close(db);
+
 }
 
 void workerMenu() {

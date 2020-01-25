@@ -11,8 +11,8 @@ public:
 
 private:
 
-	std::string reportShortages();
+	void reportShortages(std::string id);
 
-	void sendOdrerToDriver();
+	void sendOdrerToDriver(std::string id);
 	// they rather to delete
 };
