@@ -85,7 +85,9 @@ void Database::addClientToDB(std::string name, std::string surname, std::string 
     }
 }
 
-void Database::addEmployeeToDB(std::string name, std::string surname, std::string position,std::string phone_number, std::string pesel, std::string birth_date, std::string password) {
+
+void Database::addEmployeeToDB(std::string name, std::string surname, std::string position, std::string phone_number, std::string pesel, std::string birth_date, std::string password) {
+	
     if (checkConnection()) {
         sql_string = "INSERT INTO EMPLOYERS (NAME, SURNAME, POSITION, PHONE_NUMBER, PESEL, BIRTH_DATE, PASSWORD) VALUES ('" + name + "', '" + surname + "', '" + position + "', " + phone_number + "," + pesel + ", '" + birth_date + "', '0000'); ";
 
@@ -124,7 +126,7 @@ Records Database::select_stmt(const char* stmt)
 	Records records;  
 	char *errmsg;
 	
-	int ret = sqlite3_exec(db, stmt, select_callback, &records, &errmsg);
+	int ret = sqlite3_exec(db, stmt, callback, &records, &errmsg);
 	
 	if (ret != SQLITE_OK) {
 		std::cerr << "Error in select statement " << stmt << "[" << errmsg << "]\n";
@@ -148,13 +150,14 @@ void Database::sql_stmt(const char* stmt)
 
 
 std::string Database::login(std::string user, std::string password) {
-	std::string  str = "SELECT FUNCTION FROM EMPLOYEE WHERE ID =" + user + "AND PASSWORD =" + password + "";
-	const char * char_str;
+
+	std::string str;
+    sql_string = "SELECT POSITION FROM EMPLOYERS WHERE ID =" + user + "AND PASSWORD ='" + password + "'";
+    sql = sql_string.c_str();
 	
     if (checkConnection()) {
-		char_str = sql_string.c_str();
-		
-		Records records = select_stmt(char_str);
+
+		Records records = select_stmt(sql);
 		
 		for(auto& record : records){
 			
