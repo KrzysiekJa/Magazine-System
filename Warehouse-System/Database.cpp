@@ -26,6 +26,7 @@ bool Database::checkConnection() {
     }
 }
 
+
 int Database::callback(void* data, int argc, char** argv, char** azColName) {
     int i;
     fprintf(stderr, "%s: ", (const char*)data);
@@ -237,9 +238,15 @@ void Database::showAllOrders(std::string employee_id){
 		sql_string = "SELECT ID FROM ORDERS";
 	    sql = sql_string.c_str();
 
-		Record records = select_stmt(sql);
+		Records records = select_stmt(sql);
+		Record  n_records;
 		
 		for(auto& record : records){
+					
+			n_records.push_back(record[0]);
+		}
+		
+		for(auto& record : n_records){
 		
 			sql_string = "SELECT * FROM ORDERS WHERE ID =" + record + "";// please fix
 	        sql = sql_string.c_str();
