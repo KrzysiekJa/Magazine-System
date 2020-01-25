@@ -162,7 +162,6 @@
     <ClCompile Include="OrderCreationInterface.cpp" />
     <ClCompile Include="OrdersControlSystem.cpp" />
     <ClCompile Include="Person.cpp" />
-    <ClCompile Include="Quest.cpp" />
     <ClCompile Include="Receipt.cpp" />
     <ClCompile Include="Seller.cpp" />
   </ItemGroup>
@@ -172,15 +171,11 @@
     <ClInclude Include="Database.h" />
     <ClInclude Include="Driver.h" />
     <ClInclude Include="Employee.h" />
-    <ClInclude Include="Item.h" />
     <ClInclude Include="MagazineWorker.h" />
     <ClInclude Include="Messenger.h" />
-    <ClInclude Include="Order.h" />
     <ClInclude Include="OrderCreationInterface.h" />
     <ClInclude Include="OrdersControlSystem.h" />
     <ClInclude Include="Person.h" />
-    <ClInclude Include="Product.h" />
-    <ClInclude Include="Quest.h" />
     <ClInclude Include="Receipt.h" />
     <ClInclude Include="Seller.h" />
   </ItemGroup>

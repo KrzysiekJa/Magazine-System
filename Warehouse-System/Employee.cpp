@@ -6,16 +6,14 @@
 
 Employee::Employee(int n_id) : Person(n_id) {}
 
-void Employee::personShowData() {
-	//showData(); - nie dziala, bledy
-	 /* Brak polaczenia z metodami, zmiennymi z klasy Database
+void Employee::personShowData(std::string id) {
+
 	if (checkConnection()) {
 
+		sql_string = "SELECT NAME, SURNAME, POSITION, PHONE_NUMBER, PESEL, BIRTH_DATE FROM EMPLOYERS WHERE ID =" + id + "";
+		
 		sql = sql_string.c_str();
-
-		sql_string = "SELECT PESEL, BIRTH_DAY FROM EMPLOYEE WHERE ID =" + id + "";
-
-		rc = sqlite3_exec(db, sql_string, callback, (void*)data, &zErrMsg);
+		rc = sqlite3_exec(db, sql, callback, (void*)data, &zErrMsg);
 
 		if (rc != SQLITE_OK) {
 			fprintf(stderr, "SQL error: %s\n", zErrMsg);
@@ -26,4 +24,4 @@ void Employee::personShowData() {
 		}
 	}
 	sqlite3_close(db);
-*/}
+}

@@ -7,12 +7,12 @@
 #include "Driver.h"
 
 
-class Client : Person, OrdersControlSystem {
+class Client : public Person, public OrdersControlSystem {
 
 public:
 
 	Client(int n_id);
 
-	void showReceipts();
+	void showReceipts(std::string id);
 
 };

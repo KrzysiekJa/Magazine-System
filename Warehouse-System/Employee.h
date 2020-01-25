@@ -3,11 +3,11 @@
 #include "Person.h"
 
 
-class Employee : Person {
+class Employee : public Person{
 
 protected:
 
 	Employee(int n_id);
 
-	void personShowData();
+	void personShowData(std::string id);
 };

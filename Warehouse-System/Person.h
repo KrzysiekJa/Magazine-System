@@ -1,11 +1,11 @@
 #pragma once
-
-class Person{
+#include <string>
+class Person : Database{
 
 public:
 	int id;
 
 	Person(int n_id);
 
-	void showData();
+	void showData(std::string id);
 };

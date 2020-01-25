@@ -6,7 +6,8 @@
 #include "Messenger.h"
 
 
-class Seller : Employee {
+class Seller : public Employee {
+
 public:
 	Seller(int n_id);
 

@@ -5,7 +5,9 @@
 #include "OrdersControlSystem.h"
 #include "Messenger.h"
 
-class Boss : Employee {
+
+
+class Boss : public Employee {
 
 public:
 	Boss(int n_id);
