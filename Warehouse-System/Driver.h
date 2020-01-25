@@ -13,7 +13,7 @@ public:
 private:
 	std::string quest;
 
-	void deselectOrder();
+	void deselectOrder(std::string id, std::string status);
 
 	std::string getInformationClient(std::string client_id);
 };

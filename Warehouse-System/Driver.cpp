@@ -6,9 +6,23 @@
 Driver::Driver(int n_id) : Employee(n_id) {}
 
 
-void Driver::deselectOrder() {
-	// TODO - implement Driver::deselectOrder
-	throw "Not yet implemented";
+void Driver::deselectOrder(std::string id, std::string status) {
+	if (checkConnection()) {
+		sql_string = "UPDATE ORDERS SET STATUS = '" + status + "' WHERE ID = " + id + "";
+		sql = sql_string.c_str();
+
+
+		rc = sqlite3_exec(db, sql, callback, (void*)data, &zErrMsg);
+
+		if (rc != SQLITE_OK) {
+			fprintf(stderr, "SQL error: %s\n", zErrMsg);
+			sqlite3_free(zErrMsg);
+		}
+		else {
+			fprintf(stdout, "Operation done successfully\n");
+		}
+	}
+	sqlite3_close(db);
 }
 
 std::string Driver::getInformationClient(std::string client_id) {
