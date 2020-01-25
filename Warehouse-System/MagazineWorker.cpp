@@ -1,5 +1,8 @@
 #include <iostream>
 #include <string>
+#include "Employee.h"
+#include "OrdersControlSystem.h"
+#include "Messenger.h"
 #include "MagazineWorker.h"
 
 

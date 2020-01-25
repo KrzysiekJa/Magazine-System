@@ -1,12 +1,17 @@
 #pragma once
 
 #include "Database.h"
+#include <string>
 
 
 class OrdersControlSystem : Database {
-
+	friend class Boss;
+	friend class Seller;
+	friend class Driver;
+	friend class MagazineWorker;
+	
 private:
-	//Order list_of_orders[];
+
 	int number_of_orders;
 
 	void saveToDB();

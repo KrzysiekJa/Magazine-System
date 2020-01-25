@@ -1,6 +1,9 @@
 #include <iostream>
 #include <string>
-#include "Database.h"
+#include "Employee.h"
+#include "OrderCreationInterface.h"
+#include "OrdersControlSystem.h"
+#include "Messenger.h"
 #include "Boss.h"
 
 

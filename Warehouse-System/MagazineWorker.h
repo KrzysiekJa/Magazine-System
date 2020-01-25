@@ -1,6 +1,9 @@
 #pragma once
 
+#include <string>
 #include "Employee.h"
+#include "OrdersControlSystem.h"
+#include "Messenger.h"
 
 
 class MagazineWorker : Employee {

@@ -2,9 +2,9 @@
 
 #include "Employee.h"
 #include "OrderCreationInterface.h"
+#include "OrdersControlSystem.h"
+#include "Messenger.h"
 
-//class Boss : Employee, OrderCreationInterface {
-//nie mozna rozpoznac klasy OrderCreationInterface
 class Boss : Employee {
 
 public:

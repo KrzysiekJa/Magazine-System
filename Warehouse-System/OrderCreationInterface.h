@@ -5,7 +5,9 @@
 
 
 class OrderCreationInteface : Database {
-
+	friend class Boss;
+	friend class Seller;
+	
 public:
 	void createOrder(std::string order);
 

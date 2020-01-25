@@ -4,7 +4,10 @@
 #include "Database.h"
 
 class Messenger : Database {
-
+	friend class Boss;
+	friend class Seller;
+	friend class Driver;
+	friend class MagazineWorker;
 
 public:
 

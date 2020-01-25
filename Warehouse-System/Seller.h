@@ -1,11 +1,12 @@
 #pragma once
 
-#include "Database.h"
 #include "Employee.h"
 #include "OrderCreationInterface.h"
+#include "OrdersControlSystem.h"
+#include "Messenger.h"
 
 
-class Seller : Employee, OrderCreationInteface {
+class Seller : Employee {
 public:
 	Seller(int n_id);
 

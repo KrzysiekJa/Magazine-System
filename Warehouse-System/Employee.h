@@ -1,12 +1,9 @@
 #pragma once
 
 #include "Person.h"
-#include "Messenger.h"
-#include "OrdersControlSystem.h"
-#include "Database.h"
 
 
-class Employee : Person, OrdersControlSystem, Messenger {
+class Employee : Person {
 
 protected:
 
