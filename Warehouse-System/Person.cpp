@@ -7,16 +7,15 @@
 
 
 Person::Person(int n_id) : id(n_id) {}
-/* Metody nie widza sie z klasa Database - nie dziala
-void Person::showData()
+
+void Person::showData(std::string id)
 {
 	if (checkConnection()) {
 
+		sql_string = "SELECT NAME, SURNAME, PHONE_NUMBER FROM EMPLOYERS WHERE ID = " + id + "";
 		sql = sql_string.c_str();
 
-		sql_string = "SELECT NAME, SURNAME, PHONE_NUMBER FROM EMPLOYEE WHERE ID =" + id + "";
-
-		rc = sqlite3_exec(db, sql_string, callback, (void*)data, &zErrMsg);
+		rc = sqlite3_exec(db, sql, callback, (void*)data, &zErrMsg);
 
 		if (rc != SQLITE_OK) {
 			fprintf(stderr, "SQL error: %s\n", zErrMsg);

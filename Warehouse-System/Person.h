@@ -7,5 +7,5 @@ public:
 
 	Person(int n_id);
 
-	void showData();
+	void showData(std::string id);
 };
