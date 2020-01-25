@@ -1,9 +1,7 @@
 #include "OrderCreationInterface.h"
 #include "Database.h"
-#include "Order.h"
-#include "Product.h"
 
-
+/* do zrobienia
 Order OrderCreationInteface::createOrder(Order order) {
 	// TODO - implement OrderCreationInteface::createOrder
 	throw "Not yet implemented";
@@ -18,3 +16,4 @@ Order OrderCreationInteface::sendOrder(Order order) {
 	// TODO - implement OrderCreationInteface::sendOrder
 	throw "Not yet implemented";
 }
+*/

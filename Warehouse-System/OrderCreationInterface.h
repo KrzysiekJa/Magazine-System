@@ -4,7 +4,7 @@
 #include <string>
 
 
-class OrderCreationInteface : Database {
+class OrderCreationInteface : public Database {
 
 public:
 	void createOrder(std::string order);

@@ -126,7 +126,7 @@ Records Database::select_stmt(const char* stmt)
 	Records records;  
 	char *errmsg;
 	
-	int ret = sqlite3_exec(db, stmt, callback, &records, &errmsg);
+	int ret = sqlite3_exec(db, stmt, select_callback, &records, &errmsg);
 	
 	if (ret != SQLITE_OK) {
 		std::cerr << "Error in select statement " << stmt << "[" << errmsg << "]\n";

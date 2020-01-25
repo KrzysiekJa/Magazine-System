@@ -6,11 +6,11 @@
 #include "Database.h"
 
 
-class Employee : Person, OrdersControlSystem, Messenger {
+class Employee : public Person, public OrdersControlSystem, public Messenger {
 
 protected:
 
 	Employee(int n_id);
 
-	void personShowData();
+	void personShowData(std::string id);
 };

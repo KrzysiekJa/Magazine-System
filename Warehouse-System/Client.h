@@ -7,7 +7,7 @@
 #include "Driver.h"
 
 
-class Client : Person, OrdersControlSystem {
+class Client : public Person, public OrdersControlSystem {
 
 public:
 

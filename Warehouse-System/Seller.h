@@ -5,7 +5,7 @@
 #include "OrderCreationInterface.h"
 
 
-class Seller : Employee, OrderCreationInteface {
+class Seller : public Employee, public OrderCreationInteface {
 public:
 	Seller(int n_id);
 

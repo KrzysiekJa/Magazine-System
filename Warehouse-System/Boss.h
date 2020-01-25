@@ -5,7 +5,7 @@
 
 //class Boss : Employee, OrderCreationInterface {
 //nie mozna rozpoznac klasy OrderCreationInterface
-class Boss : Employee {
+class Boss : public Employee {
 
 public:
 	Boss(int n_id);

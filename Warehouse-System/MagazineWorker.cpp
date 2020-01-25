@@ -11,7 +11,7 @@ std::string MagazineWorker::reportShortages() {
 	throw "Not yet implemented";
 }
 
-Order MagazineWorker::sendOdrerToDriver() {
+void MagazineWorker::sendOdrerToDriver() {
 	// TODO - implement MagazineWorker::sendOdrerToDriver
 	throw "Not yet implemented";
 }

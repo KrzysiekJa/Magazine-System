@@ -11,16 +11,34 @@ void Driver::deselectOrder() {
 	throw "Not yet implemented";
 }
 
-std::string Driver::getInformationClient(int client_id) {
+std::string Driver::getInformationClient(std::string client_id) {
 
-	std::string zip_code, adress;
-	// znalezc cleinta w bazie
-	// pobrac zipp_code adress
+	/*std::string zip_code, adress;
 
 	std::string str = zip_code.append(", ");
 	str.append(adress);
 
 	return str;
+	*/
+
+	if (checkConnection()) {
+
+		sql_string = "SELECT NAME, SURNAME, PHONE_NUMBER, PHONE_NUMBER, ZIP_CODE, ADDRESS FROM CLIENTS WHERE ID =" + client_id + "";
+		sql = sql_string.c_str();
+
+
+		rc = sqlite3_exec(db, sql, callback, (void*)data, &zErrMsg);
+
+		if (rc != SQLITE_OK) {
+			fprintf(stderr, "SQL error: %s\n", zErrMsg);
+			sqlite3_free(zErrMsg);
+		}
+		else {
+			fprintf(stdout, "Operation done successfully\n");
+		}
+	}
+	sqlite3_close(db);
+
 }
 
 

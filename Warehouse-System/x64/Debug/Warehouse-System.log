@@ -1,25 +1,11 @@
-﻿  Boss.cpp
-C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\OrdersControlSystem.h(4,10): fatal error C1083: Nie można otworzyć pliku dołącz: 'Quest.h': No such file or directory
-  Client.cpp
-C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\OrdersControlSystem.h(4,10): fatal error C1083: Nie można otworzyć pliku dołącz: 'Quest.h': No such file or directory
-  Database.cpp
-  Driver.cpp
-C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.h(3,10): fatal error C1083: Nie można otworzyć pliku dołącz: 'Quest.h': No such file or directory
-  Employee.cpp
-C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\OrdersControlSystem.h(4,10): fatal error C1083: Nie można otworzyć pliku dołącz: 'Quest.h': No such file or directory
-  MagazineWorker.cpp
-C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\OrdersControlSystem.h(4,10): fatal error C1083: Nie można otworzyć pliku dołącz: 'Quest.h': No such file or directory
-  main.cpp
-C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\main.cpp(4,10): fatal error C1083: Nie można otworzyć pliku dołącz: 'conio': No such file or directory
-  Messenger.cpp
-  OrderCreationInterface.cpp
-C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\OrderCreationInterface.h(4,10): fatal error C1083: Nie można otworzyć pliku dołącz: 'Order.h': No such file or directory
-  OrdersControlSystem.cpp
-C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\OrdersControlSystem.h(4,10): fatal error C1083: Nie można otworzyć pliku dołącz: 'Quest.h': No such file or directory
-  Person.cpp
-  Quest.cpp
-c1xx : fatal error C1083: Nie można otworzyć pliku źródło: 'Quest.cpp': No such file or directory
-  Receipt.cpp
-  Seller.cpp
-C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\OrdersControlSystem.h(4,10): fatal error C1083: Nie można otworzyć pliku dołącz: 'Quest.h': No such file or directory
-  Generowanie kodu...
+﻿  Database.cpp
+Database.obj : error LNK2019: nierozpoznany zewnętrzny symbol sqlite3_close przywołany w funkcji "public: void __cdecl Database::addClientToDB(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?addClientToDB@Database@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0000@Z)
+Messenger.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_close
+Database.obj : error LNK2019: nierozpoznany zewnętrzny symbol sqlite3_exec przywołany w funkcji "public: void __cdecl Database::addClientToDB(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?addClientToDB@Database@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0000@Z)
+Messenger.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_exec
+Database.obj : error LNK2019: nierozpoznany zewnętrzny symbol sqlite3_free przywołany w funkcji "public: void __cdecl Database::addClientToDB(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?addClientToDB@Database@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0000@Z)
+Messenger.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_free
+Database.obj : error LNK2019: nierozpoznany zewnętrzny symbol sqlite3_open przywołany w funkcji "public: bool __cdecl Database::checkConnection(void)" (?checkConnection@Database@@QEAA_NXZ)
+Database.obj : error LNK2019: nierozpoznany zewnętrzny symbol sqlite3_errmsg przywołany w funkcji "public: bool __cdecl Database::checkConnection(void)" (?checkConnection@Database@@QEAA_NXZ)
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\sqlite\sqlite3.lib : warning LNK4272: wystąpił konflikt typu maszyny biblioteki „x86” z typem maszyny docelowej „x64”
+C:\Users\admin\source\repos\Warehouse-System\x64\Debug\Warehouse-System.exe : fatal error LNK1120: liczba nierozpoznanych elementów zewnętrznych: 5

@@ -3,7 +3,7 @@
 #include "Employee.h"
 
 
-class MagazineWorker : Employee {
+class MagazineWorker : public Employee {
 public:
 	MagazineWorker(int n_id);
 

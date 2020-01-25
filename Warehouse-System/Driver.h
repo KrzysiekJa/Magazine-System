@@ -4,7 +4,7 @@
 #include <string>
 
 
-class Driver : Employee {
+class Driver : public Employee {
 public:
 	Driver(int n_id);
 
@@ -15,5 +15,5 @@ private:
 
 	void deselectOrder();
 
-	std::string getInformationClient(int client_id);
+	std::string getInformationClient(std::string client_id);
 };
