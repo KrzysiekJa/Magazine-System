@@ -1,11 +1,241 @@
-﻿  Database.cpp
-Database.obj : error LNK2019: nierozpoznany zewnętrzny symbol sqlite3_close przywołany w funkcji "public: void __cdecl Database::addClientToDB(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?addClientToDB@Database@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0000@Z)
-Messenger.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_close
-Database.obj : error LNK2019: nierozpoznany zewnętrzny symbol sqlite3_exec przywołany w funkcji "public: void __cdecl Database::addClientToDB(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?addClientToDB@Database@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0000@Z)
-Messenger.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_exec
-Database.obj : error LNK2019: nierozpoznany zewnętrzny symbol sqlite3_free przywołany w funkcji "public: void __cdecl Database::addClientToDB(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?addClientToDB@Database@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0000@Z)
-Messenger.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_free
-Database.obj : error LNK2019: nierozpoznany zewnętrzny symbol sqlite3_open przywołany w funkcji "public: bool __cdecl Database::checkConnection(void)" (?checkConnection@Database@@QEAA_NXZ)
-Database.obj : error LNK2019: nierozpoznany zewnętrzny symbol sqlite3_errmsg przywołany w funkcji "public: bool __cdecl Database::checkConnection(void)" (?checkConnection@Database@@QEAA_NXZ)
-C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\sqlite\sqlite3.lib : warning LNK4272: wystąpił konflikt typu maszyny biblioteki „x86” z typem maszyny docelowej „x64”
-C:\Users\admin\source\repos\Warehouse-System\x64\Debug\Warehouse-System.exe : fatal error LNK1120: liczba nierozpoznanych elementów zewnętrznych: 5
+﻿  Boss.cpp
+  Client.cpp
+  Database.cpp
+  Driver.cpp
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(10,5): error C2385: niejednoznaczne dostęp do "checkConnection"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(10,5): message : może to być "checkConnection" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(10,5): message : lub może to być "checkConnection" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(11,14): error C2385: niejednoznaczne dostęp do "sql_string"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(11,14): message : może to być "sql_string" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(11,14): message : lub może to być "sql_string" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(12,7): error C2385: niejednoznaczne dostęp do "sql"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(12,7): message : może to być "sql" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(12,7): message : lub może to być "sql" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(12,19): error C2385: niejednoznaczne dostęp do "sql_string"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(12,19): message : może to być "sql_string" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(12,19): message : lub może to być "sql_string" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(15,6): error C2385: niejednoznaczne dostęp do "rc"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(15,6): message : może to być "rc" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(15,6): message : lub może to być "rc" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(15,23): error C2385: niejednoznaczne dostęp do "db"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(15,23): message : może to być "db" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(15,23): message : lub może to być "db" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(15,28): error C2385: niejednoznaczne dostęp do "sql"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(15,28): message : może to być "sql" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(15,28): message : lub może to być "sql" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(15,51): error C2385: niejednoznaczne dostęp do "data"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(15,51): message : może to być "data" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(15,51): message : lub może to być "data" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(15,61): error C2385: niejednoznaczne dostęp do "zErrMsg"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(15,61): message : może to być "zErrMsg" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(15,61): message : lub może to być "zErrMsg" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(17,6): error C2385: niejednoznaczne dostęp do "rc"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(17,6): message : może to być "rc" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(17,6): message : lub może to być "rc" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(18,46): error C2385: niejednoznaczne dostęp do "zErrMsg"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(18,46): message : może to być "zErrMsg" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(18,46): message : lub może to być "zErrMsg" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(19,24): error C2385: niejednoznaczne dostęp do "zErrMsg"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(19,24): message : może to być "zErrMsg" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(19,24): message : lub może to być "zErrMsg" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(25,18): error C2385: niejednoznaczne dostęp do "db"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(25,18): message : może to być "db" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(25,18): message : lub może to być "db" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(38,5): error C2385: niejednoznaczne dostęp do "checkConnection"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(38,5): message : może to być "checkConnection" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(38,5): message : lub może to być "checkConnection" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(40,14): error C2385: niejednoznaczne dostęp do "sql_string"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(40,14): message : może to być "sql_string" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(40,14): message : lub może to być "sql_string" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(41,7): error C2385: niejednoznaczne dostęp do "sql"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(41,7): message : może to być "sql" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(41,7): message : lub może to być "sql" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(41,19): error C2385: niejednoznaczne dostęp do "sql_string"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(41,19): message : może to być "sql_string" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(41,19): message : lub może to być "sql_string" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(44,6): error C2385: niejednoznaczne dostęp do "rc"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(44,6): message : może to być "rc" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(44,6): message : lub może to być "rc" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(44,23): error C2385: niejednoznaczne dostęp do "db"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(44,23): message : może to być "db" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(44,23): message : lub może to być "db" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(44,28): error C2385: niejednoznaczne dostęp do "sql"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(44,28): message : może to być "sql" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(44,28): message : lub może to być "sql" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(44,51): error C2385: niejednoznaczne dostęp do "data"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(44,51): message : może to być "data" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(44,51): message : lub może to być "data" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(44,61): error C2385: niejednoznaczne dostęp do "zErrMsg"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(44,61): message : może to być "zErrMsg" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(44,61): message : lub może to być "zErrMsg" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(46,6): error C2385: niejednoznaczne dostęp do "rc"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(46,6): message : może to być "rc" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(46,6): message : lub może to być "rc" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(47,46): error C2385: niejednoznaczne dostęp do "zErrMsg"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(47,46): message : może to być "zErrMsg" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(47,46): message : lub może to być "zErrMsg" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(48,24): error C2385: niejednoznaczne dostęp do "zErrMsg"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(48,24): message : może to być "zErrMsg" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(48,24): message : lub może to być "zErrMsg" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(54,18): error C2385: niejednoznaczne dostęp do "db"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(54,18): message : może to być "db" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Driver.cpp(54,18): message : lub może to być "db" w podstawowym "Database"
+  Employee.cpp
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(11,5): error C2385: niejednoznaczne dostęp do "checkConnection"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(11,5): message : może to być "checkConnection" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(11,5): message : lub może to być "checkConnection" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(13,14): error C2385: niejednoznaczne dostęp do "sql_string"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(13,14): message : może to być "sql_string" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(13,14): message : lub może to być "sql_string" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(15,7): error C2385: niejednoznaczne dostęp do "sql"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(15,7): message : może to być "sql" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(15,7): message : lub może to być "sql" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(15,19): error C2385: niejednoznaczne dostęp do "sql_string"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(15,19): message : może to być "sql_string" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(15,19): message : lub może to być "sql_string" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(16,6): error C2385: niejednoznaczne dostęp do "rc"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(16,6): message : może to być "rc" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(16,6): message : lub może to być "rc" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(16,23): error C2385: niejednoznaczne dostęp do "db"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(16,23): message : może to być "db" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(16,23): message : lub może to być "db" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(16,28): error C2385: niejednoznaczne dostęp do "sql"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(16,28): message : może to być "sql" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(16,28): message : lub może to być "sql" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(16,51): error C2385: niejednoznaczne dostęp do "data"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(16,51): message : może to być "data" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(16,51): message : lub może to być "data" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(16,61): error C2385: niejednoznaczne dostęp do "zErrMsg"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(16,61): message : może to być "zErrMsg" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(16,61): message : lub może to być "zErrMsg" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(18,6): error C2385: niejednoznaczne dostęp do "rc"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(18,6): message : może to być "rc" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(18,6): message : lub może to być "rc" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(19,46): error C2385: niejednoznaczne dostęp do "zErrMsg"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(19,46): message : może to być "zErrMsg" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(19,46): message : lub może to być "zErrMsg" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(20,24): error C2385: niejednoznaczne dostęp do "zErrMsg"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(20,24): message : może to być "zErrMsg" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(20,24): message : lub może to być "zErrMsg" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(26,18): error C2385: niejednoznaczne dostęp do "db"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(26,18): message : może to być "db" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Employee.cpp(26,18): message : lub może to być "db" w podstawowym "Database"
+  MagazineWorker.cpp
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(11,5): error C2385: niejednoznaczne dostęp do "checkConnection"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(11,5): message : może to być "checkConnection" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(11,5): message : lub może to być "checkConnection" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(12,14): error C2385: niejednoznaczne dostęp do "sql_string"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(12,14): message : może to być "sql_string" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(12,14): message : lub może to być "sql_string" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(13,7): error C2385: niejednoznaczne dostęp do "sql"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(13,7): message : może to być "sql" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(13,7): message : lub może to być "sql" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(13,19): error C2385: niejednoznaczne dostęp do "sql_string"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(13,19): message : może to być "sql_string" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(13,19): message : lub może to być "sql_string" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(16,6): error C2385: niejednoznaczne dostęp do "rc"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(16,6): message : może to być "rc" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(16,6): message : lub może to być "rc" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(16,23): error C2385: niejednoznaczne dostęp do "db"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(16,23): message : może to być "db" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(16,23): message : lub może to być "db" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(16,28): error C2385: niejednoznaczne dostęp do "sql"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(16,28): message : może to być "sql" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(16,28): message : lub może to być "sql" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(16,51): error C2385: niejednoznaczne dostęp do "data"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(16,51): message : może to być "data" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(16,51): message : lub może to być "data" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(16,61): error C2385: niejednoznaczne dostęp do "zErrMsg"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(16,61): message : może to być "zErrMsg" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(16,61): message : lub może to być "zErrMsg" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(18,6): error C2385: niejednoznaczne dostęp do "rc"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(18,6): message : może to być "rc" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(18,6): message : lub może to być "rc" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(19,46): error C2385: niejednoznaczne dostęp do "zErrMsg"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(19,46): message : może to być "zErrMsg" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(19,46): message : lub może to być "zErrMsg" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(20,24): error C2385: niejednoznaczne dostęp do "zErrMsg"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(20,24): message : może to być "zErrMsg" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(20,24): message : lub może to być "zErrMsg" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(26,18): error C2385: niejednoznaczne dostęp do "db"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(26,18): message : może to być "db" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(26,18): message : lub może to być "db" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(32,5): error C2385: niejednoznaczne dostęp do "checkConnection"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(32,5): message : może to być "checkConnection" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(32,5): message : lub może to być "checkConnection" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(33,14): error C2385: niejednoznaczne dostęp do "sql_string"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(33,14): message : może to być "sql_string" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(33,14): message : lub może to być "sql_string" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(34,7): error C2385: niejednoznaczne dostęp do "sql"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(34,7): message : może to być "sql" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(34,7): message : lub może to być "sql" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(34,19): error C2385: niejednoznaczne dostęp do "sql_string"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(34,19): message : może to być "sql_string" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(34,19): message : lub może to być "sql_string" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(37,6): error C2385: niejednoznaczne dostęp do "rc"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(37,6): message : może to być "rc" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(37,6): message : lub może to być "rc" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(37,23): error C2385: niejednoznaczne dostęp do "db"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(37,23): message : może to być "db" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(37,23): message : lub może to być "db" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(37,28): error C2385: niejednoznaczne dostęp do "sql"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(37,28): message : może to być "sql" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(37,28): message : lub może to być "sql" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(37,51): error C2385: niejednoznaczne dostęp do "data"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(37,51): message : może to być "data" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(37,51): message : lub może to być "data" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(37,61): error C2385: niejednoznaczne dostęp do "zErrMsg"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(37,61): message : może to być "zErrMsg" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(37,61): message : lub może to być "zErrMsg" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(39,6): error C2385: niejednoznaczne dostęp do "rc"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(39,6): message : może to być "rc" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(39,6): message : lub może to być "rc" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(40,46): error C2385: niejednoznaczne dostęp do "zErrMsg"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(40,46): message : może to być "zErrMsg" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(40,46): message : lub może to być "zErrMsg" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(41,24): error C2385: niejednoznaczne dostęp do "zErrMsg"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(41,24): message : może to być "zErrMsg" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(41,24): message : lub może to być "zErrMsg" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(47,18): error C2385: niejednoznaczne dostęp do "db"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(47,18): message : może to być "db" w podstawowym "Database"
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\MagazineWorker.cpp(47,18): message : lub może to być "db" w podstawowym "Database"
+  main.cpp
+  OrderCreationInterface.cpp
+  Person.cpp
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Person.cpp(13,6): error C3861: "checkConnection": identyfikatora nie odnaleziono
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Person.cpp(15,3): error C2065: "sql_string": niezadeklarowany identyfikator
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Person.cpp(16,3): error C2065: "sql": niezadeklarowany identyfikator
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Person.cpp(16,9): error C2065: "sql_string": niezadeklarowany identyfikator
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Person.cpp(18,3): error C2065: "rc": niezadeklarowany identyfikator
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Person.cpp(18,21): error C2065: "db": niezadeklarowany identyfikator
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Person.cpp(18,25): error C2065: "sql": niezadeklarowany identyfikator
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Person.cpp(18,30): error C2065: "callback": niezadeklarowany identyfikator
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Person.cpp(18,47): error C2065: "data": niezadeklarowany identyfikator
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Person.cpp(18,54): error C2065: "zErrMsg": niezadeklarowany identyfikator
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Person.cpp(20,7): error C2065: "rc": niezadeklarowany identyfikator
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Person.cpp(21,39): error C2065: "zErrMsg": niezadeklarowany identyfikator
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Person.cpp(22,17): error C2065: "zErrMsg": niezadeklarowany identyfikator
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Person.cpp(28,16): error C2065: "db": niezadeklarowany identyfikator
+  Receipt.cpp
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Receipt.cpp(6,9): error C3861: "checkConnection": identyfikatora nie odnaleziono
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Receipt.cpp(7,9): error C2065: "sql_string": niezadeklarowany identyfikator
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Receipt.cpp(9,9): error C2065: "sql": niezadeklarowany identyfikator
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Receipt.cpp(9,15): error C2065: "sql_string": niezadeklarowany identyfikator
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Receipt.cpp(11,9): error C2065: "rc": niezadeklarowany identyfikator
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Receipt.cpp(11,27): error C2065: "db": niezadeklarowany identyfikator
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Receipt.cpp(11,31): error C2065: "sql": niezadeklarowany identyfikator
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Receipt.cpp(11,36): error C2065: "callback": niezadeklarowany identyfikator
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Receipt.cpp(11,50): error C2065: "zErrMsg": niezadeklarowany identyfikator
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Receipt.cpp(11,14): error C3861: "sqlite3_exec": identyfikatora nie odnaleziono
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Receipt.cpp(13,13): error C2065: "rc": niezadeklarowany identyfikator
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Receipt.cpp(13,19): error C2065: "SQLITE_OK": niezadeklarowany identyfikator
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Receipt.cpp(14,48): error C2065: "zErrMsg": niezadeklarowany identyfikator
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Receipt.cpp(15,26): error C2065: "zErrMsg": niezadeklarowany identyfikator
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Receipt.cpp(15,13): error C3861: "sqlite3_free": identyfikatora nie odnaleziono
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Receipt.cpp(18,18): error C2039: „cout”: Nie jest składową „std”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\string(24): message : zobacz deklarację „std”
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Receipt.cpp(18,23): error C2065: "cout": niezadeklarowany identyfikator
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Receipt.cpp(20,23): error C2065: "db": niezadeklarowany identyfikator
+C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\Receipt.cpp(20,9): error C3861: "sqlite3_close": identyfikatora nie odnaleziono
+  Seller.cpp
+  Generowanie kodu...
