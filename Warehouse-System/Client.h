@@ -13,6 +13,6 @@ public:
 
 	Client(int n_id);
 
-	void showReceipts();
+	void showReceipts(std::string id);
 
 };
