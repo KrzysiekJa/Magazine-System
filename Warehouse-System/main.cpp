@@ -1,7 +1,7 @@
 ﻿#include <iostream>
 #include <cstdlib>
 #include <string>
-#include <conio>
+#include <conio.h> // czy dziala xd
 #include "Database.h"
 #include "Boss.h"
 #include "Seller.h"
@@ -49,6 +49,8 @@ int main(){
 				std::cin >> surname;
 				
 				gotoxy(20,1);
+				// https://stackoverflow.com/questions/37772842/masking-password-in-c-login-program
+				// http://www.cplusplus.com/articles/E6vU7k9E/
 				std::cout << "Password: ";
 				std::cin >> password_str;
 				
@@ -76,25 +78,24 @@ int main(){
 			std::cout << "Your password : ";
 			std::cin >> password_str;
 			
-			// !!! trzeba dodac kolumnę ID !!!
 			str = db.login(id_str, password_str);
 			password_str = "";
 			
 			if (str == "Boss") {
 				//Boss boss;
-				//boss.menu();
+				//boss.bossMenu();
 			}
 			if (str == "Seller") {
 				//Seller seller;
-				//seller.menu();
+				//seller.sellerMenu();
 			}
 			if (str == "MagazineWorker") {
 				//MagazineWorker worker;
-				//worker.menu();
+				//worker.workerMenu();
 			}
 			if (str == "Driver") {
 				//Driver driver;
-				//driver.menu();
+				//driver.driverMenu();
 			}
 			id_str = "";
 		}

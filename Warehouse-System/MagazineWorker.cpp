@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include "MagazineWorker.h"
-#include "Order.h"
 
 
 MagazineWorker::MagazineWorker(int n_id) : Employee(n_id) {}
@@ -17,7 +16,7 @@ Order MagazineWorker::sendOdrerToDriver() {
 	throw "Not yet implemented";
 }
 
-void menu() {
+void workerMenu() {
 	while (true) {
 		std::string str;
 

@@ -23,6 +23,7 @@ public:
 						 std::string birth_date, std::string password);
 	std::string login(std::string username, std::string password);
 	
+	void addItem(std::string product_name, int amount);
 
 	sqlite3* db;
 	char* zErrMsg = 0;
@@ -33,8 +34,8 @@ public:
 	
 private:
 	
-	int 	select_callback(void *p_data, int num_fields, char **p_fields, char **p_col_names);
-	Records select_stmt(const char* stmt);
+	static int select_callback(void *p_data, int num_fields, char **p_fields, char **p_col_names);
+	Records	select_stmt(const char* stmt);
 	void 	sql_stmt(const char* stmt);
 };
 

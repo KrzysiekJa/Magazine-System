@@ -1,7 +1,6 @@
 #include <string>
 #include <iostream>
 #include "Seller.h"
-#include "Order.h"
 #include "Receipt.h"
 
 Seller::Seller(int n_id) : Employee(n_id) {}

@@ -7,7 +7,7 @@ class MagazineWorker : Employee {
 public:
 	MagazineWorker(int n_id);
 
-	void menu() {};
+	void workerMenu() {};
 
 private:
 

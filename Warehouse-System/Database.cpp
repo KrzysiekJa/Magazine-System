@@ -1,5 +1,4 @@
 #include "Database.h"
-
 #include <iostream> 
 #include <stdio.h>
 #include <stdlib.h>
@@ -86,7 +85,7 @@ void Database::addClientToDB(std::string name, std::string surname, std::string 
     }
 }
 
-void Database::addEmployeeToDB(std::string name, std::string surname, std::string position,std::string phone_number, std::string pesel, std::string birth_date, std::string password,) {
+void Database::addEmployeeToDB(std::string name, std::string surname, std::string position,std::string phone_number, std::string pesel, std::string birth_date, std::string password) {
     if (checkConnection()) {
         sql_string = "INSERT INTO EMPLOYERS (NAME, SURNAME, POSITION, PHONE_NUMBER, PESEL, BIRTH_DATE, PASSWORD) VALUES ('" + name + "', '" + surname + "', '" + position + "', " + phone_number + "," + pesel + ", '" + birth_date + "', '0000'); ";
 
@@ -149,11 +148,13 @@ void Database::sql_stmt(const char* stmt)
 
 
 std::string Database::login(std::string user, std::string password) {
-	std::string str;
+	std::string  str = "SELECT FUNCTION FROM EMPLOYEE WHERE ID =" + user + "AND PASSWORD =" + password + "";
+	const char * char_str;
 	
     if (checkConnection()) {
+		char_str = sql_string.c_str();
 		
-		Records records = select_stmt("SELECT FUNCTION FROM EMPLOYEE WHERE ID =" + user + "AND PASSWORD =" + password + "");
+		Records records = select_stmt(char_str);
 		
 		for(auto& record : records){
 			
@@ -163,9 +164,35 @@ std::string Database::login(std::string user, std::string password) {
 			}
 		}
 		std::transform(str.begin(), str.end(), str.begin(), [](unsigned char c){ return std::tolower(c); });
-		
+		// lambda expresion C++14
 		return str;
     }
 	
 	return "";
 }
+
+
+void Database::addItem(std::string product_name, int amount){
+	
+    if (checkConnection()) {
+		
+		std::string str = std::to_string(amount);
+		
+        sql_string = "INSERT INTO ITEMS (PRODUCT, AMOUNT) VALUES ('" + product_name + "', '" + str + "'); ";
+		// please fix
+        sql = sql_string.c_str();
+
+        rc = sqlite3_exec(db, sql, callback, 0, &zErrMsg);
+
+        if (rc != SQLITE_OK) {
+            fprintf(stderr, "SQL error: %s\n", zErrMsg);
+            sqlite3_free(zErrMsg);
+        }
+        else {
+            std::cout << "Records created successfully\n";
+        }
+        sqlite3_close(db);
+    }
+}
+
+
