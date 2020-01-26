@@ -10,7 +10,7 @@ class Driver : public Employee {
 public:
 	Driver(int n_id);
 
-	void driverMenu() {}
+	void driverMenu();
 
 private:
 	std::string quest;

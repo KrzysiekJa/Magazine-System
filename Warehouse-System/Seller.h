@@ -11,7 +11,7 @@ class Seller : public Employee {
 public:
 	Seller(int n_id);
 
-	void sellerMenu() {};
+	void sellerMenu();
 
 	//Receipt receipt; niezidentyfikowany identyfikator przesloniecia
 

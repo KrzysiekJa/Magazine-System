@@ -59,7 +59,7 @@ void Driver::getInformationClient(std::string client_id) {
 }
 
 
-void driverMenu() {
+void Driver::driverMenu() {
 	while (true) {
 		std::string str;
 

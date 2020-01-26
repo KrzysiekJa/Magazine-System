@@ -78,18 +78,22 @@ int main(){
 			password_str = "";
 			
 			if (str == "boss") {
-				//Boss boss(id_str);
-				//boss.bossMenu();
+				std::cout << "Logged as boss" << std::endl;
+				Boss boss(std::stoi(id_str));
+				boss.bossMenu();
 			}
 			if (str == "seller") {
+				std::cout << "Logged as seller" << std::endl;
 				//Seller seller(id_str);
 				//seller.sellerMenu();
 			}
 			if (str == "magazineworker") {
+				std::cout << "Logged as magazineworker" << std::endl;
 				//MagazineWorker worker(id_str);
 				//worker.workerMenu();
 			}
 			if (str == "driver") {
+				std::cout << "Logged as driver" << std::endl;
 				//Driver driver(id_str);
 				//driver.driverMenu();
 			}

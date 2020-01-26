@@ -15,7 +15,7 @@ void sendReceipt(std::string text) {
 	throw "Not yet implemented";
 }
 
-void sellerMenu() {
+void Seller::sellerMenu() {
 	while (true) {
 		OrdersControlSystem oCSys;
 		OrderCreationInterface oCInter;

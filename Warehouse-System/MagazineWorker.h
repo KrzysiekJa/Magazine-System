@@ -10,7 +10,7 @@ class MagazineWorker : public virtual Database, public Employee {
 public:
 	MagazineWorker(int n_id);
 
-	void workerMenu() {};
+	void workerMenu();
 
 private:
 

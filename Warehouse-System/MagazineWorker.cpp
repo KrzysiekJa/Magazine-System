@@ -53,7 +53,7 @@ void MagazineWorker::sendOdrerToDriver(std::string id) {
 
 }
 
-void workerMenu() {
+void MagazineWorker::workerMenu() {
 	while (true) {
 		OrdersControlSystem oCSys;
 		OrderCreationInterface oCInter;

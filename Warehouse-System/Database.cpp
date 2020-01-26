@@ -160,13 +160,14 @@ std::string Database::login(std::string user, std::string password) {
 
 		Records records = select_stmt(sql);
 		
-		for(auto& record : records){
-			
-			if(record[0] == "ID"){
-				str = record[1];
-				break;
-			}
-		}
+        for (auto& record : records) {
+
+            for (auto& record2 : record) {
+
+                str = record2;
+            }
+        }
+    
 		std::transform(str.begin(), str.end(), str.begin(), [](unsigned char c){ return std::tolower(c); });
 		// lambda expresion C++14
 		return str;

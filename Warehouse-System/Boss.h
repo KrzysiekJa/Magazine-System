@@ -12,5 +12,5 @@ class Boss : public Employee {
 public:
 	Boss(int n_id);
 
-	void bossMenu() {};
+	void bossMenu();
 };
