@@ -30,7 +30,7 @@ public:
 	const char* sql;
 	const char* data = "Callback function called";
 	
-
+protected:
 	bool checkConnection();
 
 	static int callback(void* NotUsed, int argc, char** argv, char** azColName);
