@@ -49,7 +49,7 @@ sqlite3_close(db);
 void OrdersControlSystem::showOrder(std::string id) {
 	if (checkConnection()) {
 
-		sql_string = "SELECT ORDERS.CLIENT_ID, ORDERS.STATUS, PRODUCTS.NAME, PRODUCTS.AMOUNT FROM ORDERS INNER JOIN PRODUCTS ON ORDERS.ID, PRODUCTS.ORDER_ID WHERE ORDERS.ID =" + id + "";
+		sql_string = "SELECT ORDERS.CLIENT_ID, ORDERS.STATUS, PRODUCTS.NAME, PRODUCTS.AMOUNT FROM ORDERS INNER JOIN PRODUCTS ON ORDERS.ID = PRODUCTS.ORDER_ID WHERE ORDERS.ID =" + id + "";
 		sql = sql_string.c_str();
 
 		rc = sqlite3_exec(db, sql, callback, (void*)data, &zErrMsg);

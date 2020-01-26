@@ -15,12 +15,12 @@ void Boss::bossMenu() {
 	Messenger mess;
 
 
-	std::string order_id, name, amount, messageID, message, receiver;
+	std::string order_id, name, amount, messageID, message, receiver, status;
 	std::string str;
 
 	while (true) {
 
-		std::cout << "Choose : show, show all (order(s)), add (product), shortages, read, send (message), logout" << std::endl;
+		std::cout << "Choose : show, show all (order(s)), add (item or product), shortages, read, send (message), logout" << std::endl;
 
 		std::cin >> str;
 
@@ -36,12 +36,28 @@ void Boss::bossMenu() {
 			oCSys.showOrder(order_id);
 		}
 		if (str == "add") {
+			std::cout << "Choose : item, product" << std::endl;
+			std::cin >> str;
 
-			std::cout << "Product's name : ";
-			std::cin >> name;
-			std::cout << "Amount : ";
-			std::cin >> amount;
-			oCInter.addItem(name, amount);
+			if (str == "item") {
+				std::cout << "Item's name : ";
+				std::cin >> name;
+				std::cout << "Amount : ";
+				std::cin >> amount;
+				oCInter.addItem(name, amount);
+			}
+			if (str == "product") {
+				std::cout << "Product's name : ";
+				std::cin >> name;
+				std::cout << "Amount : ";
+				std::cin >> amount;
+				std::cout << "Order id : ";
+				std::cin >> order_id;
+				std::cout << "Status : ";
+				std::cin >> status;
+				oCInter.addProduct(name, amount, order_id, status);
+			}
+			
 		}
 		if (str == "shortages") {
 			// TO DO

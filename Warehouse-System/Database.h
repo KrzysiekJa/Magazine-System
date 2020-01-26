@@ -28,7 +28,7 @@ public:
 	int rc;
 	std::string sql_string;
 	const char* sql;
-	const char* data = "Callback function called";
+	const char* data = "Showing results:\n";
 	
 protected:
 	bool checkConnection();
