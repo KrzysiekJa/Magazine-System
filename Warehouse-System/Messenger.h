@@ -4,7 +4,7 @@
 #include "Database.h"
 
 
-class Messenger : public Database {
+class Messenger : public virtual Database {
 	friend class Boss;
 	friend class Seller;
 	friend class Driver;

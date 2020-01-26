@@ -58,6 +58,9 @@ void sellerMenu() {
 			mess.readMessage(messageID);
 		}
 		if (str == "send") {
+			std::cout << "Sender id : ";
+			int id; //brakowalo zmiennej
+			std::cin >> id;
 			
 			std::cout << "Receiver's id : ";
 			std::cin >> receiver;

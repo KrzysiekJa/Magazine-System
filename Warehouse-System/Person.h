@@ -1,8 +1,8 @@
 #pragma once
 #include <string>
+#include "Database.h"
 
-
-class Person{
+class Person: public virtual Database{
 
 public:
 	int id;

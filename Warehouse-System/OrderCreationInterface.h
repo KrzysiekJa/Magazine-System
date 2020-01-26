@@ -4,7 +4,7 @@
 #include <string>
 
 
-class OrderCreationInterface : public Database {
+class OrderCreationInterface : public virtual Database {
 	friend class Boss;
 	friend class Seller;
 	

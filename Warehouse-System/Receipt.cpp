@@ -1,7 +1,7 @@
 #include "Receipt.h"
 #include <string>
 
-Receipt Receipt::create(std::string owner_id, std::string order_id, std::string data) {
+void Receipt::create(std::string owner_id, std::string order_id, std::string data) {
     
     if (checkConnection()) {
         sql_string = "INSERT INTO RECEIPTS (OWNER_ID, ORDER_ID, DATA) VALUES (" + owner_id + ", " + order_id + ", '" + data + "'); ";

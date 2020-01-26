@@ -6,7 +6,7 @@
 #include "Messenger.h"
 
 
-class MagazineWorker : public Database, public Employee {
+class MagazineWorker : public virtual Database, public Employee {
 public:
 	MagazineWorker(int n_id);
 

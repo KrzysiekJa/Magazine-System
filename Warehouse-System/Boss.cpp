@@ -51,7 +51,7 @@ void bossMenu() {
 		mess.readMessage(messageID);
 	}
 	if (str == "send") {
-		
+		int id;
 		std::cout << "Receiver's id : ";
 		std::cin >> receiver;
 		std::cout << "Massage : ";

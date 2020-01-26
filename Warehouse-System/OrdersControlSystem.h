@@ -4,7 +4,7 @@
 #include <string>
 
 
-class OrdersControlSystem : public Database {
+class OrdersControlSystem : public virtual Database {
 	friend class Boss;
 	friend class Seller;
 	friend class Driver;
