@@ -171,6 +171,7 @@
     <ClInclude Include="Database.h" />
     <ClInclude Include="Driver.h" />
     <ClInclude Include="Employee.h" />
+    <ClInclude Include="functions.hpp" />
     <ClInclude Include="MagazineWorker.h" />
     <ClInclude Include="Messenger.h" />
     <ClInclude Include="OrderCreationInterface.h" />

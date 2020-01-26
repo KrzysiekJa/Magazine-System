@@ -8,15 +8,14 @@
 
 class Driver : public Employee {
 public:
-	Database& db;
 	Driver(int n_id);
 
-	void driverMenu() {}
+	void driverMenu();
 
 private:
 	std::string quest;
 
 	void deselectOrder(std::string id, std::string status);
 
-	std::string getInformationClient(std::string client_id);
+	void getInformationClient(std::string client_id);
 };

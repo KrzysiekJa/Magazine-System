@@ -6,16 +6,15 @@
 #include "Messenger.h"
 
 
-class MagazineWorker : public Database, public Employee {
+class MagazineWorker : public virtual Database, public Employee {
 public:
 	MagazineWorker(int n_id);
 
-	void workerMenu() {};
-
+	void workerMenu();
+	void showShortages();
 private:
 
 	void reportShortages(std::string id);
 
-	void sendOdrerToDriver(std::string id);
-	// they rather to delete
+	
 };

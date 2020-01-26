@@ -1,20 +1,20 @@
 #include <iostream>
 #include <string>
-#include <stdio.h>
+#include <conio.h>
 
 
 namespace functions
 {
 	std::string login()
 	{	
-		constexpr char c_enter  = 13;
-		constexpr char c_backspace = 8;
+		const char c_enter  = 13;
+		const char c_backspace = 8;
 		
 		std::string password;
 		char input_character;
  
 		std::cout << "Password: ";
-		input_character = getchar();
+		input_character = _getch();
  
 		while(input_character != c_enter) {
  
@@ -28,7 +28,7 @@ namespace functions
 		        std::cout.put('*');
 		        password += input_character;
 		    }
-				input_character = getchar();
+				input_character = _getch();
 		}
  
 		return password;

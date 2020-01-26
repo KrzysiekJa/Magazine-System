@@ -7,10 +7,9 @@
 #include "MagazineWorker.h"
 #include "Driver.h"
 #include "Client.h"
-#include "functions.hpp"
+#include "functions.cpp"
 
 int main(){
-
 	Database db;
 	std::string id_str, password_str, str, name, surname, position, phone_number, zip_code, address, pesel, birth_date;
 
@@ -50,7 +49,7 @@ int main(){
 				
 				password_str = functions::login();
 				
-				std::cout << "Position: ";
+				std::cout <<std::endl << "Position: ";
 				std::cin >> position;
 
 				std::cout << "Phone number: ";
@@ -78,20 +77,24 @@ int main(){
 			password_str = "";
 			
 			if (str == "boss") {
-				//Boss boss(id_str);
-				//boss.bossMenu();
+				std::cout << "Logged as boss" << std::endl;
+				Boss boss(std::stoi(id_str));
+				boss.bossMenu();
 			}
 			if (str == "seller") {
-				//Seller seller(id_str);
-				//seller.sellerMenu();
+				std::cout << "Logged as seller" << std::endl;
+				Seller seller(std::stoi(id_str));
+				seller.sellerMenu();
 			}
 			if (str == "magazineworker") {
-				//MagazineWorker worker(id_str);
-				//worker.workerMenu();
+				std::cout << "Logged as magazineworker" << std::endl;
+				MagazineWorker worker(std::stoi(id_str));
+				worker.workerMenu();
 			}
 			if (str == "driver") {
-				//Driver driver(id_str);
-				//driver.driverMenu();
+				std::cout << "Logged as driver" << std::endl;
+				Driver driver(std::stoi(id_str));
+				driver.driverMenu();
 			}
 			id_str = "";
 		}

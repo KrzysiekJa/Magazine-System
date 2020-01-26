@@ -1,9 +1,9 @@
 #pragma once
 
 #include "Person.h"
+#include "Database.h"
 
-
-class Employee : public Person{
+class Employee : public Person, public virtual Database{
 
 protected:
 
