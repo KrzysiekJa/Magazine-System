@@ -14,7 +14,7 @@ namespace functions
 		char input_character;
  
 		std::cout << "Password: ";
-		input_character = getch();
+		input_character = _getch();
  
 		while(input_character != c_enter) {
  
@@ -28,7 +28,7 @@ namespace functions
 		        std::cout.put('*');
 		        password += input_character;
 		    }
-				input_character = getch();
+				input_character = _getch();
 		}
  
 		return password;

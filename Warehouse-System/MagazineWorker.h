@@ -15,7 +15,5 @@ public:
 private:
 
 	void reportShortages(std::string id);
-
-	void sendOdrerToDriver(std::string id);
-	// they rather to delete
+	void showShortages();
 };

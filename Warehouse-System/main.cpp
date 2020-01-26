@@ -7,7 +7,7 @@
 #include "MagazineWorker.h"
 #include "Driver.h"
 #include "Client.h"
-#include "functions.hpp"
+#include "functions.cpp"
 
 int main(){
 
@@ -50,7 +50,7 @@ int main(){
 				
 				password_str = functions::login();
 				
-				std::cout << "Position: ";
+				std::cout <<std::endl << "Position: ";
 				std::cin >> position;
 
 				std::cout << "Phone number: ";

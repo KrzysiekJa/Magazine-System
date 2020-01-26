@@ -10,51 +10,15 @@ Driver::Driver(int n_id) : Employee(n_id) {}
 
 
 void Driver::deselectOrder(std::string id, std::string status) {
-	if (checkConnection()) {
+
 		sql_string = "UPDATE ORDERS SET STATUS = '" + status + "' WHERE ID = " + id + "";
-		sql = sql_string.c_str();
-
-
-		rc = sqlite3_exec(db, sql, callback, (void*)data, &zErrMsg);
-
-		if (rc != SQLITE_OK) {
-			fprintf(stderr, "SQL error: %s\n", zErrMsg);
-			sqlite3_free(zErrMsg);
-		}
-		else {
-			fprintf(stdout, "Operation done successfully\n");
-		}
-	}
-	sqlite3_close(db);
+		executeQuery(sql_string);
 }
 
 void Driver::getInformationClient(std::string client_id) {
 
-	/*std::string zip_code, adress;
-
-	std::string str = zip_code.append(", ");
-	str.append(adress);
-
-	return str;
-	*/
-
-	if (checkConnection()) {
-
 		sql_string = "SELECT NAME, SURNAME, PHONE_NUMBER, PHONE_NUMBER, ZIP_CODE, ADDRESS FROM CLIENTS WHERE ID =" + client_id + "";
-		sql = sql_string.c_str();
-
-
-		rc = sqlite3_exec(db, sql, callback, (void*)data, &zErrMsg);
-
-		if (rc != SQLITE_OK) {
-			fprintf(stderr, "SQL error: %s\n", zErrMsg);
-			sqlite3_free(zErrMsg);
-		}
-		else {
-			fprintf(stdout, "Operation done successfully\n");
-		}
-	}
-	sqlite3_close(db);
+		executeQuery(sql_string);
 
 }
 

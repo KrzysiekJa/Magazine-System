@@ -13,43 +13,16 @@ MagazineWorker::MagazineWorker(int n_id) : Employee(n_id) {}
 
 void MagazineWorker::reportShortages(std::string id) {
 	
-	if (checkConnection()) {
-		sql_string = "UPDATE PRODUCTS SET STATUS = ' TU WPISAC' WHERE ID = " + id + "";
-		sql = sql_string.c_str();
-
-
-		rc = sqlite3_exec(db, sql, callback, (void*)data, &zErrMsg);
-
-		if (rc != SQLITE_OK) {
-			fprintf(stderr, "SQL error: %s\n", zErrMsg);
-			sqlite3_free(zErrMsg);
-		}
-		else {
-			fprintf(stdout, "Operation done successfully\n");
-		}
-	}
-	sqlite3_close(db);
+		sql_string = "UPDATE PRODUCTS SET STATUS = 'out of order' WHERE ID = " + id + "";
+		executeQuery(sql_string);
 
 }
 
-void MagazineWorker::sendOdrerToDriver(std::string id) {
-	
-	if (checkConnection()) {
-		sql_string = "UPDATE ORDERS SET STATUS = 'TU WPISAC' WHERE ID = " + id + "";
-		sql = sql_string.c_str();
+void MagazineWorker::showShortages() {
 
+	sql_string = "SELECT NAME, AMOUNT, ORDER_ID, STATUS FROM PRODUCTS WHERE STATUS = 'out of order'";
 
-		rc = sqlite3_exec(db, sql, callback, (void*)data, &zErrMsg);
-
-		if (rc != SQLITE_OK) {
-			fprintf(stderr, "SQL error: %s\n", zErrMsg);
-			sqlite3_free(zErrMsg);
-		}
-		else {
-			fprintf(stdout, "Operation done successfully\n");
-		}
-	}
-	sqlite3_close(db);
+	executeQuery(sql_string);
 
 }
 

@@ -32,6 +32,7 @@ public:
 	
 protected:
 	bool checkConnection();
+	void executeQuery(std::string sql_string);
 
 	static int callback(void* NotUsed, int argc, char** argv, char** azColName);
 	static int select_callback(void *p_data, int num_fields, char **p_fields, char **p_col_names);
