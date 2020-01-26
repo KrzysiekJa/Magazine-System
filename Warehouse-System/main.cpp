@@ -84,18 +84,18 @@ int main(){
 			}
 			if (str == "seller") {
 				std::cout << "Logged as seller" << std::endl;
-				//Seller seller(id_str);
-				//seller.sellerMenu();
+				Seller seller(std::stoi(id_str));
+				seller.sellerMenu();
 			}
 			if (str == "magazineworker") {
 				std::cout << "Logged as magazineworker" << std::endl;
-				//MagazineWorker worker(id_str);
-				//worker.workerMenu();
+				MagazineWorker worker(std::stoi(id_str));
+				worker.workerMenu();
 			}
 			if (str == "driver") {
 				std::cout << "Logged as driver" << std::endl;
-				//Driver driver(id_str);
-				//driver.driverMenu();
+				Driver driver(std::stoi(id_str));
+				driver.driverMenu();
 			}
 			id_str = "";
 		}
