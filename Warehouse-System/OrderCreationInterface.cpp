@@ -2,7 +2,7 @@
 #include "Database.h"
 
 
-void OrderCreationInteface::createOrder(std::string client_id, std::string status) {
+void OrderCreationInterface::createOrder(std::string client_id, std::string status) {
 	
     if (checkConnection()) {
         sql_string = "INSERT INTO ORDERS (CLIENT_ID, STATUS) VALUES (" + client_id + ", '" + status + "'); ";
@@ -22,7 +22,7 @@ void OrderCreationInteface::createOrder(std::string client_id, std::string statu
     }
 }
 
-void OrderCreationInteface::addProduct(std::string name, std::string amount, std::string order_id, std::string status) {
+void OrderCreationInterface::addProduct(std::string name, std::string amount, std::string order_id, std::string status) {
 	
     if (checkConnection()) {
         sql_string = "INSERT INTO PRODUCTS (NAME, AMOUNT, ORDER_ID, STATUS) VALUES ('" + name + "', " + amount + ", " + order_id + ", '" + status + "'); ";
@@ -42,7 +42,7 @@ void OrderCreationInteface::addProduct(std::string name, std::string amount, std
     }
 }
 
-void OrderCreationInteface::addItem(std::string name, std::string amount) {
+void OrderCreationInterface::addItem(std::string name, std::string amount) {
 
     if (checkConnection()) {
         sql_string = "INSERT INTO ITEMS (NAME, AMOUNT=) VALUES ('" + name + "', " + amount + "); ";
@@ -62,7 +62,7 @@ void OrderCreationInteface::addItem(std::string name, std::string amount) {
     }
 }
 
-void OrderCreationInteface::sendOrder(std::string id) {
+void OrderCreationInterface::sendOrder(std::string id) {
 	
     if (checkConnection()) {
         sql_string = "UPDATE ORDERS SET STATUS = ' in delivery' WHERE ID = " + id + "";

@@ -25,6 +25,7 @@ public:
 	void showOrder(std::string id);
 	
 	void changeStatus(std::string id, std::string status);
+	
 	void sendToDriver(std::string id, std::string status);
 
 };

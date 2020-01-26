@@ -78,19 +78,19 @@ int main(){
 			password_str = "";
 			
 			if (str == "boss") {
-				//Boss boss;
+				//Boss boss(id_str);
 				//boss.bossMenu();
 			}
 			if (str == "seller") {
-				//Seller seller;
+				//Seller seller(id_str);
 				//seller.sellerMenu();
 			}
 			if (str == "magazineworker") {
-				//MagazineWorker worker;
+				//MagazineWorker worker(id_str);
 				//worker.workerMenu();
 			}
 			if (str == "driver") {
-				//Driver driver;
+				//Driver driver(id_str);
 				//driver.driverMenu();
 			}
 			id_str = "";

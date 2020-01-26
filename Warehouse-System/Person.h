@@ -1,6 +1,8 @@
 #pragma once
 #include <string>
-class Person : Database{
+
+
+class Person{
 
 public:
 	int id;
