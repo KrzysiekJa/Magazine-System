@@ -64,29 +64,52 @@ void driverMenu() {
 		std::string str;
 
 		std::cout << "Choose : show all (order(s)), show, deselect (order), (show) complited, read, send (message), logout" << std::endl;
-		std::cin >> str;
+		//std::cin >> str;
 
+		//Test
+		str = "";
+		std::cout << "b³¹d - nieznana komenda";
+		//Test2
+		str = "show all";
+		if(str == "show all")
+		{
+			//show_all();
+		}
+		else std::cout << "b³¹d - nieznana komenda";
+		//Test3
+		
+		if (str == "show all")
+		{//show_all();
+		}
 
-		if (str == "show all" || str == "all") {
-			// TO DO
+		else	if (str == "show")
+		{//show();
 		}
-		if (str == "show") {
-			// TO DO
+
+			
+		else if (str == "deselect")
+		{//deselect();
 		}
-		if (str == "deselect") {
-			// TO DO
+
+		else	if (str == "complited")
+		{//deselect();
 		}
-		if (str == "complited") {
-			// TO DO
+
+		else	if (str == "read")
+		{//read();
 		}
-		if (str == "read") {
-			// TO DO
+
+		else	if (str == "send")
+		{//send();
 		}
-		if (str == "send") {
-			// TO DO
+
+		else	if (str == "logout")
+		{//logout();
 		}
-		if (str == "logout") {
-			return;
-		}
+
+		else
+			std::cout << "b³¹d - nieznana komenda";
+		
+		
 	}
 }
