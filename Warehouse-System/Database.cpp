@@ -153,7 +153,7 @@ void Database::sql_stmt(const char* stmt)
 std::string Database::login(std::string user, std::string password) {
 
 	std::string str;
-	sql_string = "SELECT POSITION FROM EMPLOYERS WHERE ID =" + user + "AND PASSWORD ='" + password + "'";
+	sql_string = "SELECT POSITION FROM EMPLOYERS WHERE ID = " + user + " AND PASSWORD ='" + password + "'";
     sql = sql_string.c_str();
 	
     if (checkConnection()) {

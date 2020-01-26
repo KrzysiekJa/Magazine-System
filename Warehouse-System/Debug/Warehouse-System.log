@@ -1,15 +1,2 @@
-﻿  Boss.cpp
-  Client.cpp
-  Database.cpp
-  Driver.cpp
-  Employee.cpp
-  MagazineWorker.cpp
-  Messenger.cpp
-  OrderCreationInterface.cpp
-  OrdersControlSystem.cpp
-  Person.cpp
-  Receipt.cpp
-  Seller.cpp
-  main.cpp
-  Generowanie kodu...
+﻿  Database.cpp
   Warehouse-System.vcxproj -> C:\Users\admin\source\repos\Warehouse-System\Debug\Warehouse-System.exe
