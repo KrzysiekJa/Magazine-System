@@ -11,9 +11,10 @@ public:
 	MagazineWorker(int n_id);
 
 	void workerMenu();
-
+	void showShortages();
 private:
 
 	void reportShortages(std::string id);
-	void showShortages();
+
+	
 };

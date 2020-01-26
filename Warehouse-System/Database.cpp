@@ -89,9 +89,6 @@ void Database::executeQuery(std::string sql_string) {
 
 }
 
-
-
-
 void Database::addClientToDB(std::string name, std::string surname, std::string phone_number, std::string zip_code, std::string address) {
 	
 		sql_string = "INSERT INTO CLIENTS (NAME, SURNAME, PHONE_NUMBER, ZIP_CODE, ADDRESS) VALUES ('" + name + "', '" + surname + "', " + phone_number + ", '" + zip_code + "','" + address + "'); ";

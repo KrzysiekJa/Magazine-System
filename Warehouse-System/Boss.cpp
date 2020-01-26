@@ -5,7 +5,7 @@
 #include "OrdersControlSystem.h"
 #include "Messenger.h"
 #include "Boss.h"
-
+#include "MagazineWorker.h"
 
 Boss::Boss(int n_id) : Employee(n_id) {}
 
@@ -60,8 +60,10 @@ void Boss::bossMenu() {
 			
 		}
 		if (str == "shortages") {
-			// TO DO
-		}
+			int n_id = 0;
+			MagazineWorker shortages(n_id);
+			shortages.showShortages();
+		}	
 		if (str == "read") {
 
 			std::cout << "Massage's id : ";
