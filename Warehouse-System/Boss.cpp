@@ -15,7 +15,7 @@ void Boss::bossMenu() {
 	Messenger mess;
 
 
-	std::string order_id, name, amount, messageID, message, receiver, status;
+	std::string order_id, name, amount, messageID, message, receiver, status, sender;
 	std::string str;
 
 	while (true) {
@@ -72,12 +72,14 @@ void Boss::bossMenu() {
 		}
 		if (str == "send") {
 			int id;
+			std::cout << "Your id : ";
+			std::cin >> sender;
 			std::cout << "Receiver's id : ";
 			std::cin >> id;
 			std::cout << "Massage : ";
 			std::cin >> message;
-			std::string ss = std::to_string(id);
-			mess.sendMessage(message, receiver, ss);
+			//std::string ss = std::to_string(id);
+			mess.sendMessage(message, receiver, sender);
 		}
 		if (str == "logout") {
 			return;

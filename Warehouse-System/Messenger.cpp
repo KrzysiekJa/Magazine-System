@@ -5,7 +5,7 @@
 
 void Messenger::sendMessage(std::string message, std::string receiver, std::string sender) {
 	
-		sql_string = "INSERT INTO MESSENGER (RECEIVER, SENDER, MESSAGE) VALUES ('" + receiver + "', '" + sender + "', " + message + "); ";
+		sql_string = "INSERT INTO MESSENGER (RECEIVER, SENDER, MESSAGE) VALUES ('" + receiver + "', '" + sender + "', '" + message + "'); ";
 
 		executeQuery(sql_string);
 }

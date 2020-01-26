@@ -10,7 +10,6 @@
 #include "functions.cpp"
 
 int main(){
-
 	Database db;
 	std::string id_str, password_str, str, name, surname, position, phone_number, zip_code, address, pesel, birth_date;
 

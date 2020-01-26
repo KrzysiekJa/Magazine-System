@@ -20,7 +20,7 @@ void OrderCreationInterface::addProduct(std::string name, std::string amount, st
 
 void OrderCreationInterface::addItem(std::string name, std::string amount) {
 
-        sql_string = "INSERT INTO ITEMS (NAME, AMOUNT=) VALUES ('" + name + "', " + amount + "); ";
+        sql_string = "INSERT INTO ITEMS (NAME, AMOUNT) VALUES ('" + name + "', " + amount + "); ";
 
         executeQuery(sql_string);
 }
