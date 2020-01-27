@@ -1,6 +1,16 @@
-﻿  Driver.cpp
+﻿  Boss.cpp
+  Client.cpp
+  Database.cpp
+  Driver.cpp
   Employee.cpp
+  MagazineWorker.cpp
+  main.cpp
+  Messenger.cpp
+  OrderCreationInterface.cpp
+  OrdersControlSystem.cpp
+  Person.cpp
+  Receipt.cpp
   Seller.cpp
   Generowanie kodu...
-  LINK : nie znaleziono elementu C:\Users\VashaVindoV\Warehouse-System\Debug\Warehouse-System.exe ani nie został on skompilowany podczas ostatniego konsolidowania przyrostowego; zostanie wykonana pełna konsolidacja
-  Warehouse-System.vcxproj -> C:\Users\VashaVindoV\Warehouse-System\Debug\Warehouse-System.exe
+  LINK : nie znaleziono elementu C:\Users\admin\Warehouse-System\Debug\Warehouse-System.exe ani nie został on skompilowany podczas ostatniego konsolidowania przyrostowego; zostanie wykonana pełna konsolidacja
+  Warehouse-System.vcxproj -> C:\Users\admin\Warehouse-System\Debug\Warehouse-System.exe
