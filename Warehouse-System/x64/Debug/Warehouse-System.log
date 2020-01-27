@@ -1,39 +1,27 @@
-﻿  Client.cpp
+﻿  Boss.cpp
+C:\Users\VashaVindoV\Warehouse-System\Warehouse-System\Database.h(6,10): fatal error C1083: Nie można otworzyć pliku dołącz: 'sqlite3.h': No such file or directory
+  Client.cpp
+C:\Users\VashaVindoV\Warehouse-System\Warehouse-System\Database.h(6,10): fatal error C1083: Nie można otworzyć pliku dołącz: 'sqlite3.h': No such file or directory
+  Database.cpp
+C:\Users\VashaVindoV\Warehouse-System\Warehouse-System\Database.h(6,10): fatal error C1083: Nie można otworzyć pliku dołącz: 'sqlite3.h': No such file or directory
   Driver.cpp
+C:\Users\VashaVindoV\Warehouse-System\Warehouse-System\Database.h(6,10): fatal error C1083: Nie można otworzyć pliku dołącz: 'sqlite3.h': No such file or directory
+  Employee.cpp
+C:\Users\VashaVindoV\Warehouse-System\Warehouse-System\Database.h(6,10): fatal error C1083: Nie można otworzyć pliku dołącz: 'sqlite3.h': No such file or directory
+  MagazineWorker.cpp
+C:\Users\VashaVindoV\Warehouse-System\Warehouse-System\Database.h(6,10): fatal error C1083: Nie można otworzyć pliku dołącz: 'sqlite3.h': No such file or directory
   main.cpp
+C:\Users\VashaVindoV\Warehouse-System\Warehouse-System\Database.h(6,10): fatal error C1083: Nie można otworzyć pliku dołącz: 'sqlite3.h': No such file or directory
+  Messenger.cpp
+C:\Users\VashaVindoV\Warehouse-System\Warehouse-System\Database.h(6,10): fatal error C1083: Nie można otworzyć pliku dołącz: 'sqlite3.h': No such file or directory
+  OrderCreationInterface.cpp
+C:\Users\VashaVindoV\Warehouse-System\Warehouse-System\Database.h(6,10): fatal error C1083: Nie można otworzyć pliku dołącz: 'sqlite3.h': No such file or directory
+  OrdersControlSystem.cpp
+C:\Users\VashaVindoV\Warehouse-System\Warehouse-System\Database.h(6,10): fatal error C1083: Nie można otworzyć pliku dołącz: 'sqlite3.h': No such file or directory
+  Person.cpp
+C:\Users\VashaVindoV\Warehouse-System\Warehouse-System\Database.h(6,10): fatal error C1083: Nie można otworzyć pliku dołącz: 'sqlite3.h': No such file or directory
+  Receipt.cpp
+C:\Users\VashaVindoV\Warehouse-System\Warehouse-System\Database.h(6,10): fatal error C1083: Nie można otworzyć pliku dołącz: 'sqlite3.h': No such file or directory
   Seller.cpp
+C:\Users\VashaVindoV\Warehouse-System\Warehouse-System\Database.h(6,10): fatal error C1083: Nie można otworzyć pliku dołącz: 'sqlite3.h': No such file or directory
   Generowanie kodu...
-Person.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_close
-Receipt.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_close
-MagazineWorker.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_close
-Messenger.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_close
-OrderCreationInterface.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_close
-OrdersControlSystem.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_close
-Client.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_close
-Database.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_close
-Driver.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_close
-Employee.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_close
-Person.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_exec
-Receipt.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_exec
-MagazineWorker.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_exec
-Messenger.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_exec
-OrderCreationInterface.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_exec
-OrdersControlSystem.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_exec
-Client.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_exec
-Database.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_exec
-Driver.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_exec
-Employee.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_exec
-Person.obj : error LNK2019: nierozpoznany zewnętrzny symbol sqlite3_free przywołany w funkcji "void __cdecl std::_Pocma<class std::allocator<char> >(class std::allocator<char> &,class std::allocator<char> &)" (??$_Pocma@V?$allocator@D@std@@@std@@YAXAEAV?$allocator@D@0@0@Z)
-Receipt.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_free
-MagazineWorker.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_free
-Messenger.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_free
-OrderCreationInterface.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_free
-OrdersControlSystem.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_free
-Client.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_free
-Database.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_free
-Driver.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_free
-Employee.obj : error LNK2001: nierozpoznany symbol zewnętrzny sqlite3_free
-Database.obj : error LNK2019: nierozpoznany zewnętrzny symbol sqlite3_open przywołany w funkcji "public: bool __cdecl Database::checkConnection(void)" (?checkConnection@Database@@QEAA_NXZ)
-Database.obj : error LNK2019: nierozpoznany zewnętrzny symbol sqlite3_errmsg przywołany w funkcji "public: bool __cdecl Database::checkConnection(void)" (?checkConnection@Database@@QEAA_NXZ)
-C:\Users\admin\source\repos\Warehouse-System\Warehouse-System\sqlite\sqlite3.lib : warning LNK4272: wystąpił konflikt typu maszyny biblioteki „x86” z typem maszyny docelowej „x64”
-C:\Users\admin\source\repos\Warehouse-System\x64\Debug\Warehouse-System.exe : fatal error LNK1120: liczba nierozpoznanych elementów zewnętrznych: 5

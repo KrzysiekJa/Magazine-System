@@ -24,6 +24,9 @@ void Driver::getInformationClient(std::string client_id) {
 
 
 void Driver::driverMenu() {
+
+	OrdersControlSystem object;
+
 	while (true) {
 		std::string str;
 
@@ -37,22 +40,29 @@ void Driver::driverMenu() {
 		str = "show all";
 		if(str == "show all")
 		{
-			//show_all();
+			object.showListOfOrdres();
 		}
 		else std::cout << "b³¹d - nieznana komenda";
 		//Test3
 		
 		if (str == "show all")
-		{//show_all();
-		}
+		{
 
+		}
 		else	if (str == "show")
-		{//show();
+		{
+
 		}
 
 			
 		else if (str == "deselect")
-		{//deselect();
+		{
+			std::string id, status;
+			std::cout << "id";
+			std::cin >> id;
+			std::cout << "status";
+			std::cin >> status;
+			deselectOrder(id, status);
 		}
 
 		else	if (str == "complited")
