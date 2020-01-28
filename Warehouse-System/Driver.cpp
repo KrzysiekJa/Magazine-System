@@ -5,7 +5,6 @@
 #include "Messenger.h"
 #include "Driver.h"
 
-
 Driver::Driver(int n_id) : Employee(n_id) {}
 
 
@@ -25,37 +24,29 @@ void Driver::getInformationClient(std::string client_id) {
 
 void Driver::driverMenu() {
 
-	OrdersControlSystem object;
+	OrdersControlSystem oCSys;
+	Messenger mess;
 
 	while (true) {
 		std::string str;
 
 		std::cout << "Choose : show all (order(s)), show, deselect (order), (show) complited, read, send (message), logout" << std::endl;
-		//std::cin >> str;
-
-		//Test
-		str = "";
-		std::cout << "b³¹d - nieznana komenda";
-		//Test2
-		str = "show all";
-		if(str == "show all")
-		{
-			object.showListOfOrdres();
-		}
-		else std::cout << "b³¹d - nieznana komenda";
-		//Test3
 		
+		std::cin >> str;
 		if (str == "show all")
 		{
-
+			oCSys.showListOfOrdres();
 		}
-		else	if (str == "show")
+		if (str == "show")
 		{
-
+			std::cout << "Order's id : ";
+			std::string order_id;
+			std::cin >> order_id;
+			oCSys.showOrder(order_id);
 		}
 
 			
-		else if (str == "deselect")
+	    if (str == "deselect")
 		{
 			std::string id, status;
 			std::cout << "id";
@@ -65,25 +56,43 @@ void Driver::driverMenu() {
 			deselectOrder(id, status);
 		}
 
-		else	if (str == "complited")
-		{//deselect();
+	    if (str == "complited")
+		{
+			std::string id, status;
+			std::cout << "id";
+			std::cin >> id;
+			std::cout << "status";
+			std::cin >> status;
+			oCSys.changeStatus(id, status);
 		}
 
-		else	if (str == "read")
-		{//read();
+		if (str == "read")
+		{
+			std::string messageID;
+			std::cout << "Massage's id : ";
+			std::cin >> messageID;
+			mess.readMessage(messageID);
 		}
 
-		else	if (str == "send")
-		{//send();
+		if (str == "send")
+		{
+			std::string message,sender,receiver;
+			std::cout << "Your id : ";
+			std::cin >> sender;
+			std::cout << "Receiver's id : ";
+			std::cin >> receiver;
+			std::cout << "Massage : ";
+			std::cin >> message;
+			mess.sendMessage(message, receiver, sender);
 		}
 
-		else	if (str == "logout")
-		{//logout();
+		if (str == "logout")
+		{
+			return;
 		}
 
-		else
-			std::cout << "b³¹d - nieznana komenda";
 		
 		
 	}
+
 }
